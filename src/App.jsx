@@ -1,4 +1,4 @@
-import LineChart from "./component/Echart";
+import LineChart from "./component/Echart2";
 
 function App() {
   return (

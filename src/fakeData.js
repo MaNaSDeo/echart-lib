@@ -1,3 +1,5 @@
+import * as echarts from "echarts";
+
 export const filteredData = [
   {
     device_timestamp: 1735410600000,
@@ -901,5 +903,138 @@ export const filteredData = [
     device_timestamp: 1735668900000,
     level: 0,
     isLowNetwork: true,
+  },
+];
+
+// export const modifiedData = [
+//   {
+//     data: [
+//       [1735410600000, 243.88],
+//       [1735449786000, 243.88],
+//     ],
+//     type: "line",
+//     lineStyle: {
+//       type: "dashed", // Dashed gray line
+//       color: "gray",
+//     },
+//     symbol: "none",
+//   },
+//   {
+//     type: "line",
+//     lineStyle: {
+//       type: "solid", // Solid yellow line
+//       color: "red",
+//     },
+//     symbol: "none",
+//     data: [
+//       [1735449906000, 215.38],
+//       [1735450026000, 186.88],
+//       [1735450146000, 158.38],
+//       [1735450266000, 129.88],
+//     ],
+//   },
+//   {
+//     type: "line",
+//     lineStyle: {
+//       type: "solid", // Solid yellow line
+//       color: "blue",
+//     },
+//     symbol: "none",
+//     data: [
+//       [1735450386000, 113.25],
+//       [1735450506000, 113.25],
+//     ],
+//   },
+//   {
+//     type: "line",
+//     lineStyle: {
+//       type: "solid", // Solid yellow line
+//       color: "red",
+//     },
+//     symbol: "none",
+//     data: [
+//       [1735450636000, 113.25],
+//       [1735450656000, 118],
+//       [1735450676000, 122.75],
+//       [1735450696000, 127.5],
+//       [1735450716000, 132.25],
+//     ],
+//   },
+// ];
+
+export const modifiedData = [
+  {
+    type: "line",
+    lineStyle: {
+      type: "dashed", // Dashed gray line
+      color: "gray",
+    },
+    symbol: "none",
+    data: [
+      [1735410600000, 243.88],
+      [1735449786000, 243.88],
+    ],
+  },
+  {
+    type: "line",
+    lineStyle: {
+      type: "solid", // Solid yellow line (Ignition Off)
+      color: "red",
+    },
+    symbol: "none",
+    data: [
+      [1735449786000, 243.88],
+      [1735449906000, 215.38],
+      [1735450026000, 186.88],
+      [1735450146000, 158.38],
+      [1735450266000, 129.88],
+    ],
+    areaStyle: {
+      color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+        { offset: 0, color: "#ACD4FD" }, // Light blue at the top
+        { offset: 1, color: "#F5FAFF" }, // Lighter shade at the bottom
+      ]),
+    },
+  },
+  {
+    type: "line",
+    lineStyle: {
+      type: "solid", // Solid blue line (Ignition On)
+      color: "blue",
+    },
+    symbol: "none",
+    data: [
+      [1735450266000, 129.88],
+      [1735450386000, 113.25],
+      [1735450506000, 113.25],
+    ],
+    areaStyle: {
+      color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+        { offset: 0, color: "#ACD4FD" }, // Light blue at the top
+        { offset: 1, color: "#F5FAFF" }, // Lighter shade at the bottom
+      ]),
+    },
+  },
+  {
+    type: "line",
+    lineStyle: {
+      type: "solid", // Solid yellow line (Ignition Off)
+      color: "red",
+    },
+    symbol: "none",
+    data: [
+      [1735450506000, 113.25],
+      [1735450636000, 113.25],
+      [1735450656000, 118],
+      [1735450676000, 122.75],
+      [1735450696000, 127.5],
+      [1735450716000, 132.25],
+    ],
+    areaStyle: {
+      color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+        { offset: 0, color: "#ACD4FD" }, // Light blue at the top
+        { offset: 1, color: "#F5FAFF" }, // Lighter shade at the bottom
+      ]),
+    },
   },
 ];
