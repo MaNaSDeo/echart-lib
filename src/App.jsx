@@ -1,5 +1,11 @@
+import LineChart from "./component/Echart";
+
 function App() {
-  return <></>;
+  return (
+    <div>
+      <LineChart />
+    </div>
+  );
 }
 
 export default App;
