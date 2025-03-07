@@ -11,7 +11,10 @@ const LineChart = () => {
     },
     xAxis: {
       type: "time",
-      boundaryGap: ["5%", "5%"], // Fix applied here
+      // boundaryGap: ["5%", "5%"], // Fix applied here
+      boundaryGap: false,
+      min: "dataMin", // Start x-axis from the first data point
+      max: "dataMax", // End x-axis at the last data point
     },
     yAxis: {
       type: "value",
@@ -23,6 +26,62 @@ const LineChart = () => {
       },
     },
     series: modifiedData,
+    tooltip: {
+      trigger: "axis",
+      formatter: (params) => {
+        let tooltipText = ""; // Initialize tooltip content
+
+        console.log("params", { params });
+
+        params.forEach((item) => {
+          const data = item?.data?.[2] || {}; // Access data point
+
+          tooltipText += `
+            <div>
+              🕒 <b>Time:</b> ${new Date(
+                data.device_timestamp
+              ).toLocaleString()} <br />
+              ${data?.level ? `⛽ <b>Level:</b> ${data.level} L <br />` : ""}
+              ${
+                data?.speed
+                  ? `🚗 <b>Speed:</b> ${data.speed ?? "N/A"} km/h <br />`
+                  : ""
+              }
+              ${
+                data?.ignition
+                  ? `🔥 <b>Ignition:</b> ${data.ignition ? "On" : "Off"} <br />`
+                  : ""
+              }
+              ${
+                data?.isLowNetwork
+                  ? `📡 <b>Low Network:</b> ${
+                      data.isLowNetwork ? "Yes" : "No"
+                    } <br />`
+                  : ""
+              }
+              ${
+                data?.status
+                  ? `⚠️ <b>Status:</b> ${data.status ?? "Normal"} <br />`
+                  : ""
+              }
+              ${
+                data?.address
+                  ? `📍 <b>Address:</b> ${data.address ?? "Unknown"} <br />`
+                  : ""
+              }
+            </div>
+          `;
+        });
+
+        return tooltipText; // Return formatted HTML
+      },
+      backgroundColor: "rgba(50, 50, 50, 0.8)", // Dark background
+      borderColor: "#ccc",
+      borderWidth: 1,
+      textStyle: {
+        color: "#fff", // White text
+      },
+    },
   };
 
   return (

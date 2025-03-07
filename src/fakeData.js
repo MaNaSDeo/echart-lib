@@ -971,8 +971,41 @@ export const modifiedData = [
     },
     symbol: "none",
     data: [
-      [1735410600000, 243.88],
-      [1735449786000, 243.88],
+      //   [
+      //     1735410600000,
+      //     243.88,
+      //     {
+      //       device_timestamp: 1735410600000,
+      //       level: 243.88,
+      //       isLowNetwork: true,
+      //     },
+      //   ],
+      [
+        1735449706000,
+        243.88,
+        {
+          device_timestamp: 1735410600000,
+          level: 243.88,
+          isLowNetwork: true,
+        },
+      ],
+      [
+        1735449786000,
+        243.88,
+        {
+          device_timestamp: 1735449786000,
+          speed: 0,
+          ignition: false,
+          level: 243.88,
+          isLowNetwork: true,
+          status: null,
+          address: null,
+          fuel_reading_count: null,
+          status_display_text: null,
+          end_time: 1735449786000,
+          start_time: 1735410600000,
+        },
+      ],
     ],
   },
   {
@@ -983,11 +1016,63 @@ export const modifiedData = [
     },
     symbol: "none",
     data: [
-      [1735449786000, 243.88],
-      [1735449906000, 215.38],
-      [1735450026000, 186.88],
-      [1735450146000, 158.38],
-      [1735450266000, 129.88],
+      [
+        1735449786001,
+        243.88,
+        {
+          device_timestamp: 1735449786000,
+          speed: 0,
+          ignition: false,
+          level: 243.88,
+          isLowNetwork: true,
+          status: null,
+          address: null,
+          fuel_reading_count: null,
+          status_display_text: null,
+          end_time: 1735449786000,
+          start_time: 1735410600000,
+        },
+      ],
+      [
+        1735449906000,
+        215.38,
+        {
+          device_timestamp: 1735449906000,
+          speed: 0,
+          ignition: false,
+          level: 215.38,
+        },
+      ],
+      [
+        1735450026000,
+        186.88,
+        {
+          device_timestamp: 1735450026000,
+          speed: 0,
+          ignition: false,
+          level: 186.88,
+        },
+      ],
+      [
+        1735450146000,
+        158.38,
+        {
+          device_timestamp: 1735450146000,
+          speed: 0,
+          ignition: false,
+          level: 158.38,
+        },
+      ],
+      [
+        1735450266000,
+        129.88,
+        {
+          device_timestamp: 1735450266000,
+          speed: 0,
+          ignition: false,
+          level: 129.88,
+        },
+      ],
     ],
     areaStyle: {
       color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
@@ -1004,9 +1089,36 @@ export const modifiedData = [
     },
     symbol: "none",
     data: [
-      [1735450266000, 129.88],
-      [1735450386000, 113.25],
-      [1735450506000, 113.25],
+      [
+        1735450266001,
+        129.88,
+        {
+          device_timestamp: 1735450266000,
+          speed: 0,
+          ignition: false,
+          level: 129.88,
+        },
+      ],
+      [
+        1735450386000,
+        113.25,
+        {
+          device_timestamp: 1735450386000,
+          speed: 0,
+          ignition: true,
+          level: 113.25,
+        },
+      ],
+      [
+        1735450506000,
+        113.25,
+        {
+          device_timestamp: 1735450506000,
+          speed: 0,
+          ignition: true,
+          level: 113.25,
+        },
+      ],
     ],
     areaStyle: {
       color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
@@ -1023,12 +1135,74 @@ export const modifiedData = [
     },
     symbol: "none",
     data: [
-      [1735450506000, 113.25],
-      [1735450636000, 113.25],
-      [1735450656000, 118],
-      [1735450676000, 122.75],
-      [1735450696000, 127.5],
-      [1735450716000, 132.25],
+      [
+        1735450506001,
+        113.25,
+        {
+          device_timestamp: 1735450506000,
+          speed: 0,
+          ignition: true,
+          level: 113.25,
+        },
+      ],
+      [
+        1735450636000,
+        113.25,
+        {
+          device_timestamp: 1735450636000,
+          speed: 0,
+          ignition: false,
+          level: 113.25,
+          isLowNetwork: null,
+          status: "REFUELING",
+          address:
+            "Coimbatore - Nagapattinam Hwy, Annai Meena Nagar, Alangudi Bit, Punnainallur, Tamil Nadu 613501",
+          fuel_reading_count: "236.75 L",
+          status_display_text: "Refuel",
+          end_time: null,
+          start_time: null,
+        },
+      ],
+      [
+        1735450656000,
+        118,
+        {
+          device_timestamp: 1735450656000,
+          speed: 0,
+          ignition: false,
+          level: 118,
+        },
+      ],
+      [
+        1735450676000,
+        122.75,
+        {
+          device_timestamp: 1735450676000,
+          speed: 0,
+          ignition: false,
+          level: 122.75,
+        },
+      ],
+      [
+        1735450696000,
+        127.5,
+        {
+          device_timestamp: 1735450696000,
+          speed: 0,
+          ignition: false,
+          level: 127.5,
+        },
+      ],
+      [
+        1735450716000,
+        132.25,
+        {
+          device_timestamp: 1735450716000,
+          speed: 0,
+          ignition: false,
+          level: 132.25,
+        },
+      ],
     ],
     areaStyle: {
       color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
