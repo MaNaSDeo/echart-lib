@@ -36,6 +36,8 @@ const LineChart = () => {
         params.forEach((item) => {
           const data = item?.data?.[2] || {}; // Access data point
 
+          if (data.device_timestamp % 1000 !== 0) return "";
+
           tooltipText += `
             <div>
               🕒 <b>Time:</b> ${new Date(

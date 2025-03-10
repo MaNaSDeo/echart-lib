@@ -906,62 +906,6 @@ export const filteredData = [
   },
 ];
 
-// export const modifiedData = [
-//   {
-//     data: [
-//       [1735410600000, 243.88],
-//       [1735449786000, 243.88],
-//     ],
-//     type: "line",
-//     lineStyle: {
-//       type: "dashed", // Dashed gray line
-//       color: "gray",
-//     },
-//     symbol: "none",
-//   },
-//   {
-//     type: "line",
-//     lineStyle: {
-//       type: "solid", // Solid yellow line
-//       color: "red",
-//     },
-//     symbol: "none",
-//     data: [
-//       [1735449906000, 215.38],
-//       [1735450026000, 186.88],
-//       [1735450146000, 158.38],
-//       [1735450266000, 129.88],
-//     ],
-//   },
-//   {
-//     type: "line",
-//     lineStyle: {
-//       type: "solid", // Solid yellow line
-//       color: "blue",
-//     },
-//     symbol: "none",
-//     data: [
-//       [1735450386000, 113.25],
-//       [1735450506000, 113.25],
-//     ],
-//   },
-//   {
-//     type: "line",
-//     lineStyle: {
-//       type: "solid", // Solid yellow line
-//       color: "red",
-//     },
-//     symbol: "none",
-//     data: [
-//       [1735450636000, 113.25],
-//       [1735450656000, 118],
-//       [1735450676000, 122.75],
-//       [1735450696000, 127.5],
-//       [1735450716000, 132.25],
-//     ],
-//   },
-// ];
-
 export const modifiedData = [
   {
     type: "line",
@@ -971,15 +915,6 @@ export const modifiedData = [
     },
     symbol: "none",
     data: [
-      //   [
-      //     1735410600000,
-      //     243.88,
-      //     {
-      //       device_timestamp: 1735410600000,
-      //       level: 243.88,
-      //       isLowNetwork: true,
-      //     },
-      //   ],
       [
         1735449706000,
         243.88,
@@ -1119,6 +1054,56 @@ export const modifiedData = [
           level: 113.25,
         },
       ],
+      //Borrowed from next array.
+      [
+        // 1735450635999,
+        1735450636000,
+        113.25,
+        {
+          device_timestamp: 1735450635999,
+          //   device_timestamp: 1735450636000,
+          speed: 0,
+          ignition: false,
+          level: 113.25,
+        },
+      ],
+    ],
+    areaStyle: {
+      color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+        { offset: 0, color: "#ACD4FD" }, // Light blue at the top
+        { offset: 1, color: "#F5FAFF" }, // Lighter shade at the bottom
+      ]),
+    },
+  },
+  {
+    type: "line",
+    lineStyle: {
+      type: "solid", // Solid yellow line (Ignition Off)
+      color: "red",
+    },
+    // symbol: "none",
+    // symbol: "triangle",
+    symbol: `image://src/component/img/logogoogle.svg`,
+    symbolSize: 20,
+    data: [
+      [
+        1735450636000,
+        113.25,
+        {
+          device_timestamp: 1735450636000,
+          speed: 0,
+          ignition: false,
+          level: 113.25,
+          isLowNetwork: true,
+          status: "REFUELING",
+          address:
+            "Coimbatore - Nagapattinam Hwy, Annai Meena Nagar, Alangudi Bit, Punnainallur, Tamil Nadu 613501",
+          fuel_reading_count: "236.75 L",
+          status_display_text: "Refuel",
+          end_time: null,
+          start_time: null,
+        },
+      ],
     ],
     areaStyle: {
       color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
@@ -1136,31 +1121,13 @@ export const modifiedData = [
     symbol: "none",
     data: [
       [
-        1735450506001,
-        113.25,
-        {
-          device_timestamp: 1735450506000,
-          speed: 0,
-          ignition: true,
-          level: 113.25,
-        },
-      ],
-      [
         1735450636000,
         113.25,
         {
-          device_timestamp: 1735450636000,
+          device_timestamp: 1735450636001,
           speed: 0,
           ignition: false,
           level: 113.25,
-          isLowNetwork: null,
-          status: "REFUELING",
-          address:
-            "Coimbatore - Nagapattinam Hwy, Annai Meena Nagar, Alangudi Bit, Punnainallur, Tamil Nadu 613501",
-          fuel_reading_count: "236.75 L",
-          status_display_text: "Refuel",
-          end_time: null,
-          start_time: null,
         },
       ],
       [
