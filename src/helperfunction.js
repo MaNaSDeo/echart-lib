@@ -341,7 +341,7 @@ export function transformDataForChart(filteredData) {
       if (currentSeries && lastProcessedPoint) {
         const lastTimestamp = lastProcessedPoint.device_timestamp;
         currentSeries.data.push([
-          lastTimestamp + 1,
+          lastTimestamp,
           lastProcessedPoint.level,
           { ...lastProcessedPoint, device_timestamp: lastTimestamp + 1 },
         ]);
@@ -356,7 +356,10 @@ export function transformDataForChart(filteredData) {
         currentSeries.data.push([
           lastProcessedPoint.device_timestamp,
           lastProcessedPoint.level,
-          { ...lastProcessedPoint },
+          {
+            ...lastProcessedPoint,
+            device_timestamp: lastProcessedPoint.device_timestamp + 1,
+          },
         ]);
       }
     }
