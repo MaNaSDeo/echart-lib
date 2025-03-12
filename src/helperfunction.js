@@ -317,7 +317,7 @@ export function transformDataForChart(filteredData) {
         result,
         lastProcessedPoint
       );
-      lastProcessedPoint = currentPoint;
+      lastProcessedPoint = nextPoint;
       i++; // Skip the next point as it's already been processed
       continue;
     } else if (
@@ -354,9 +354,9 @@ export function transformDataForChart(filteredData) {
       // Add the starting point (which may be the last processed point for continuity)
       if (lastProcessedPoint) {
         currentSeries.data.push([
-          currentPoint.device_timestamp,
-          currentPoint.level,
-          { ...currentPoint },
+          lastProcessedPoint.device_timestamp,
+          lastProcessedPoint.level,
+          { ...lastProcessedPoint },
         ]);
       }
     }
@@ -451,7 +451,9 @@ export function handleLowNetworkPoint(
         (currentPoint.device_timestamp + nextPoint.device_timestamp) / 2,
         (currentPoint.level + nextPoint.level) / 2,
         {
-          device_timestamp: currentPoint.device_timestamp - 1,
+          device_timestamp:
+            (currentPoint.device_timestamp + nextPoint.device_timestamp) / 2 -
+            1, // So that we will not get 2 dataset in tooltip.
           status: "LOW_NETWORK",
           end_time: nextPoint.end_time || nextPoint.device_timestamp,
           start_time: currentPoint.start_time || currentPoint.device_timestamp,
@@ -497,7 +499,9 @@ export function handleLowNetworkPoint(
         (currentPoint.device_timestamp + nextPoint.device_timestamp) / 2,
         (currentPoint.level + nextPoint.level) / 2,
         {
-          device_timestamp: currentPoint.device_timestamp + 1,
+          device_timestamp:
+            (currentPoint.device_timestamp + nextPoint.device_timestamp) / 2 +
+            1, // So that we will not get 2 dataset in tooltip.
           status: "LOW_NETWORK",
           end_time: nextPoint.end_time || nextPoint.device_timestamp,
           start_time: currentPoint.start_time || currentPoint.device_timestamp,
@@ -537,9 +541,12 @@ export function handleSpecialStatusPoint(point, result, lastProcessedPoint) {
       color: point.ignition ? "blue" : "red",
     },
     symbol:
+      // point.status === "REFUELING"
+      //   ? `image://src/component/img/RefuelIcon.svg`
+      //   : `image://src/component/img/theftIcon.svg`,
       point.status === "REFUELING"
-        ? `image://src/component/img/RefuelIcon.svg`
-        : `image://src/component/img/theftIcon.svg`,
+        ? `image://src/component/img/logogoogle.svg`
+        : `image://src/component/img/logogoogle.svg`,
     symbolSize: 20,
     data: [[point.device_timestamp, point.level, { ...point }]],
   };
