@@ -1,8 +1,21 @@
 import ReactECharts from "echarts-for-react";
-import { filteredData as data, modifiedData } from "../fakeData";
+import {
+  filteredData as data,
+  // modifiedData,
+  // processChartData,
+  processData,
+} from "../fakeData";
+import { transformDataForChart } from "../helperfunction";
 // import * as echarts from "echarts";
 
+const modifiedData = transformDataForChart(data);
+// const modifiedData = processData(data);
+
 const LineChart = () => {
+  console.log("result", {
+    modifiedData,
+  });
+
   const option = {
     title: { text: "Fuel Level Over Time" },
     tooltip: { trigger: "axis" },
