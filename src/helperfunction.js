@@ -325,6 +325,7 @@ export function transformDataForChart(filteredData) {
       currentPoint.status === "FUEL_THEFT"
     ) {
       // Handle refueling or fuel theft points
+      // console.log("result", { currentPoint, result, lastProcessedPoint });
       handleSpecialStatusPoint(currentPoint, result, lastProcessedPoint);
       lastProcessedPoint = currentPoint;
       continue;
@@ -527,7 +528,7 @@ export function handleSpecialStatusPoint(point, result, lastProcessedPoint) {
   if (result.length > 0 && lastProcessedPoint) {
     const lastSeries = result[result.length - 1];
     lastSeries.data.push([
-      point.device_timestamp - 1,
+      point.device_timestamp,
       point.level,
       {
         ...point,
@@ -576,7 +577,7 @@ export function handleSpecialStatusPoint(point, result, lastProcessedPoint) {
     symbol: "none",
     data: [
       [
-        point.device_timestamp + 1,
+        point.device_timestamp,
         point.level,
         {
           ...point,
