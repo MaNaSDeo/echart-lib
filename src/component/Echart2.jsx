@@ -3,13 +3,15 @@ import {
   filteredData as data,
   // modifiedData,
   // processChartData,
-  processData,
+  // processData,
 } from "../fakeData";
 import { transformDataForChart } from "../helperfunction";
 // import * as echarts from "echarts";
 
 const modifiedData = transformDataForChart(data);
 // const modifiedData = processData(data);
+
+console.log("modifiedData", { modifiedData });
 
 const LineChart = () => {
   console.log("result", {
@@ -44,7 +46,7 @@ const LineChart = () => {
       formatter: (params) => {
         let tooltipText = ""; // Initialize tooltip content
 
-        console.log("params", { params });
+        // console.log("params", { params });
 
         params.forEach((item) => {
           const data = item?.data?.[2] || {}; // Access data point
@@ -53,6 +55,7 @@ const LineChart = () => {
 
           tooltipText += `
             <div>
+              <b>device_timestamp:</b> ${data.device_timestamp} <br />
               🕒 <b>Time:</b> ${new Date(
                 data.device_timestamp
               ).toLocaleString()} <br />

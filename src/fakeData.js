@@ -321,108 +321,6 @@ export const modifiedData = [
   },
 ];
 
-export const filteredData = [
-  // {
-  //   device_timestamp: 1735410600000,
-  //   level: 243.88,
-  //   isLowNetwork: true,
-  // },
-  {
-    device_timestamp: 1735449706000,
-    level: 243.88,
-    isLowNetwork: true,
-  },
-  {
-    device_timestamp: 1735449786000,
-    speed: 0,
-    ignition: false,
-    level: 243.88,
-    isLowNetwork: true,
-    status: null,
-    address: null,
-    fuel_reading_count: null,
-    status_display_text: null,
-    end_time: 1735449786000,
-    start_time: 1735410600000,
-  },
-  {
-    device_timestamp: 1735449906000,
-    speed: 0,
-    ignition: false,
-    level: 215.38,
-  },
-  {
-    device_timestamp: 1735450026000,
-    speed: 0,
-    ignition: false,
-    level: 186.88,
-  },
-  {
-    device_timestamp: 1735450146000,
-    speed: 0,
-    ignition: false,
-    level: 158.38,
-  },
-  {
-    device_timestamp: 1735450266000,
-    speed: 0,
-    ignition: false,
-    level: 129.88,
-  },
-  {
-    device_timestamp: 1735450386000,
-    speed: 0,
-    ignition: true,
-    level: 113.25,
-  },
-  {
-    device_timestamp: 1735450506000,
-    speed: 0,
-    ignition: true,
-    level: 113.25,
-  },
-  {
-    device_timestamp: 1735450636000,
-    speed: 0,
-    ignition: false,
-    level: 113.25,
-    isLowNetwork: null,
-    status: "REFUELING",
-    address:
-      "Coimbatore - Nagapattinam Hwy, Annai Meena Nagar, Alangudi Bit, Punnainallur, Tamil Nadu 613501",
-    fuel_reading_count: "236.75 L",
-    status_display_text: "Refuel",
-    end_time: null,
-    start_time: null,
-  },
-  {
-    device_timestamp: 1735450656000,
-    speed: 0,
-    ignition: false,
-    level: 118,
-  },
-  {
-    device_timestamp: 1735450676000,
-    speed: 0,
-    ignition: false,
-    level: 122.75,
-  },
-  {
-    device_timestamp: 1735450696000,
-    speed: 0,
-    ignition: false,
-    level: 127.5,
-  },
-  {
-    device_timestamp: 1735450716000,
-    speed: 0,
-    ignition: false,
-    level: 132.25,
-  },
-  //extra data removed.
-  // ...extraData
-];
-
 const extraData = [
   {
     device_timestamp: 1735450736000,
@@ -1237,2589 +1135,2273 @@ const extraData = [
   },
 ];
 
-const result = [
+export const filteredData = [
   {
-    type: "line",
-    lineStyle: {
-      type: "dashed",
-      color: "gray",
-    },
-    symbol: "none",
-    data: [
-      [
-        1735410600000,
-        243.88,
-        {
-          device_timestamp: 1735410600000,
-          level: 243.88,
-          isLowNetwork: true,
-        },
-      ],
-      [
-        1735430193000,
-        243.88,
-        {
-          device_timestamp: 1735410599999,
-          status: "LOW_NETWORK",
-          end_time: 1735449786000,
-          start_time: 1735410600000,
-        },
-      ],
-    ],
+    device_timestamp: 1735257741000,
+    speed: 0,
+    ignition: false,
+    level: 234.75,
+    isLowNetwork: true,
+    status: null,
+    address: null,
+    fuel_reading_count: null,
+    status_display_text: null,
+    end_time: 1735257741000,
+    start_time: 1735065000000,
   },
   {
-    type: "line",
-    lineStyle: {
-      type: "dashed",
-      color: "gray",
-    },
-    symbol: "none",
-    data: [
-      [
-        1735430193000,
-        243.88,
-        {
-          device_timestamp: 1735410600000,
-          status: "LOW_NETWORK",
-          end_time: 1735449786000,
-          start_time: 1735410600000,
-        },
-      ],
-    ],
+    device_timestamp: 1735258041000,
+    speed: 0,
+    ignition: false,
+    level: 189.75,
   },
   {
-    type: "line",
-    lineStyle: {
-      type: "dashed",
-      color: "gray",
-    },
-    symbol: "none",
-    data: [
-      [
-        1735430193000,
-        243.88,
-        {
-          device_timestamp: 1735410600001,
-          status: "LOW_NETWORK",
-          end_time: 1735449786000,
-          start_time: 1735410600000,
-        },
-      ],
-      [
-        1735449786000,
-        243.88,
-        {
-          device_timestamp: 1735449786000,
-          speed: 0,
-          ignition: false,
-          level: 243.88,
-          isLowNetwork: true,
-          status: null,
-          address: null,
-          fuel_reading_count: null,
-          status_display_text: null,
-          end_time: 1735449786000,
-          start_time: 1735410600000,
-        },
-      ],
-    ],
+    device_timestamp: 1735258341000,
+    speed: 0,
+    ignition: false,
+    level: 186.75,
   },
   {
-    type: "line",
-    lineStyle: {
-      type: "solid",
-      color: "red",
-    },
-    symbol: "none",
-    data: [
-      [
-        1735449906000,
-        215.38,
-        {
-          device_timestamp: 1735449906000,
-          speed: 0,
-          ignition: false,
-          level: 215.38,
-        },
-      ],
-      [
-        1735449906000,
-        215.38,
-        {
-          device_timestamp: 1735449906000,
-          speed: 0,
-          ignition: false,
-          level: 215.38,
-        },
-      ],
-      [
-        1735450026000,
-        186.88,
-        {
-          device_timestamp: 1735450026000,
-          speed: 0,
-          ignition: false,
-          level: 186.88,
-        },
-      ],
-      [
-        1735450146000,
-        158.38,
-        {
-          device_timestamp: 1735450146000,
-          speed: 0,
-          ignition: false,
-          level: 158.38,
-        },
-      ],
-      [
-        1735450266000,
-        129.88,
-        {
-          device_timestamp: 1735450266000,
-          speed: 0,
-          ignition: false,
-          level: 129.88,
-        },
-      ],
-      [
-        1735450266001,
-        129.88,
-        {
-          device_timestamp: 1735450266001,
-          speed: 0,
-          ignition: false,
-          level: 129.88,
-        },
-      ],
-    ],
-    areaStyle: {
-      color: {
-        colorStops: [
-          {
-            offset: 0,
-            color: "#ACD4FD",
-          },
-          {
-            offset: 1,
-            color: "#F5FAFF",
-          },
-        ],
-        x: 0,
-        y: 0,
-        x2: 0,
-        y2: 1,
-        type: "linear",
-        global: false,
-      },
-    },
+    device_timestamp: 1735258641000,
+    speed: 0,
+    ignition: false,
+    level: 231.75,
   },
   {
-    type: "line",
-    lineStyle: {
-      type: "solid",
-      color: "blue",
-    },
-    symbol: "none",
-    data: [
-      [
-        1735450386000,
-        113.25,
-        {
-          device_timestamp: 1735450386000,
-          speed: 0,
-          ignition: true,
-          level: 113.25,
-        },
-      ],
-      [
-        1735450386000,
-        113.25,
-        {
-          device_timestamp: 1735450386000,
-          speed: 0,
-          ignition: true,
-          level: 113.25,
-        },
-      ],
-      [
-        1735450506000,
-        113.25,
-        {
-          device_timestamp: 1735450506000,
-          speed: 0,
-          ignition: true,
-          level: 113.25,
-        },
-      ],
-      [
-        1735450635999,
-        113.25,
-        {
-          device_timestamp: 1735450635999,
-          speed: 0,
-          ignition: false,
-          level: 113.25,
-          isLowNetwork: null,
-          status: "REFUELING",
-          address:
-            "Coimbatore - Nagapattinam Hwy, Annai Meena Nagar, Alangudi Bit, Punnainallur, Tamil Nadu 613501",
-          fuel_reading_count: "236.75 L",
-          status_display_text: "Refuel",
-          end_time: null,
-          start_time: null,
-        },
-      ],
-      [
-        1735450656000,
-        118,
-        {
-          device_timestamp: 1735450656000,
-          speed: 0,
-          ignition: false,
-          level: 118,
-        },
-      ],
-      [
-        1735450676000,
-        122.75,
-        {
-          device_timestamp: 1735450676000,
-          speed: 0,
-          ignition: false,
-          level: 122.75,
-        },
-      ],
-      [
-        1735450696000,
-        127.5,
-        {
-          device_timestamp: 1735450696000,
-          speed: 0,
-          ignition: false,
-          level: 127.5,
-        },
-      ],
-      [
-        1735450716000,
-        132.25,
-        {
-          device_timestamp: 1735450716000,
-          speed: 0,
-          ignition: false,
-          level: 132.25,
-        },
-      ],
-      [
-        1735450716001,
-        132.25,
-        {
-          device_timestamp: 1735450716001,
-          speed: 0,
-          ignition: false,
-          level: 132.25,
-        },
-      ],
-    ],
-    areaStyle: {
-      color: {
-        colorStops: [
-          {
-            offset: 0,
-            color: "#ACD4FD",
-          },
-          {
-            offset: 1,
-            color: "#F5FAFF",
-          },
-        ],
-        x: 0,
-        y: 0,
-        x2: 0,
-        y2: 1,
-        type: "linear",
-        global: false,
-      },
-    },
+    device_timestamp: 1735258941000,
+    speed: 0,
+    ignition: false,
+    level: 289.13,
   },
   {
-    type: "line",
-    lineStyle: {
-      type: "solid",
-      color: "red",
-    },
-    symbol: "image://src/component/img/RefuelIcon.svg",
-    symbolSize: 20,
-    data: [
-      [
-        1735450636000,
-        113.25,
-        {
-          device_timestamp: 1735450636000,
-          speed: 0,
-          ignition: false,
-          level: 113.25,
-          isLowNetwork: null,
-          status: "REFUELING",
-          address:
-            "Coimbatore - Nagapattinam Hwy, Annai Meena Nagar, Alangudi Bit, Punnainallur, Tamil Nadu 613501",
-          fuel_reading_count: "236.75 L",
-          status_display_text: "Refuel",
-          end_time: null,
-          start_time: null,
-        },
-      ],
-    ],
-    areaStyle: {
-      color: {
-        colorStops: [
-          {
-            offset: 0,
-            color: "#ACD4FD",
-          },
-          {
-            offset: 1,
-            color: "#F5FAFF",
-          },
-        ],
-        x: 0,
-        y: 0,
-        x2: 0,
-        y2: 1,
-        type: "linear",
-        global: false,
-      },
-    },
+    device_timestamp: 1735259241000,
+    speed: 0,
+    ignition: false,
+    level: 244.75,
   },
   {
-    type: "line",
-    lineStyle: {
-      type: "solid",
-      color: "red",
-    },
-    symbol: "none",
-    data: [
-      [
-        1735450636001,
-        113.25,
-        {
-          device_timestamp: 1735450636001,
-          speed: 0,
-          ignition: false,
-          level: 113.25,
-          isLowNetwork: null,
-          status: "REFUELING",
-          address:
-            "Coimbatore - Nagapattinam Hwy, Annai Meena Nagar, Alangudi Bit, Punnainallur, Tamil Nadu 613501",
-          fuel_reading_count: "236.75 L",
-          status_display_text: "Refuel",
-          end_time: null,
-          start_time: null,
-        },
-      ],
-    ],
-    areaStyle: {
-      color: {
-        colorStops: [
-          {
-            offset: 0,
-            color: "#ACD4FD",
-          },
-          {
-            offset: 1,
-            color: "#F5FAFF",
-          },
-        ],
-        x: 0,
-        y: 0,
-        x2: 0,
-        y2: 1,
-        type: "linear",
-        global: false,
-      },
-    },
+    device_timestamp: 1735259541000,
+    speed: 40,
+    ignition: false,
+    level: 237.25,
   },
   {
-    type: "line",
-    lineStyle: {
-      type: "solid",
-      color: "blue",
-    },
-    symbol: "none",
-    data: [
-      [
-        1735450736000,
-        137,
-        {
-          device_timestamp: 1735450736000,
-          speed: 0,
-          ignition: true,
-          level: 137,
-        },
-      ],
-      [
-        1735450736000,
-        137,
-        {
-          device_timestamp: 1735450736000,
-          speed: 0,
-          ignition: true,
-          level: 137,
-        },
-      ],
-      [
-        1735450756000,
-        141.75,
-        {
-          device_timestamp: 1735450756000,
-          speed: 0,
-          ignition: true,
-          level: 141.75,
-        },
-      ],
-      [
-        1735450776000,
-        146.5,
-        {
-          device_timestamp: 1735450776000,
-          speed: 0,
-          ignition: true,
-          level: 146.5,
-        },
-      ],
-      [
-        1735450796000,
-        151.25,
-        {
-          device_timestamp: 1735450796000,
-          speed: 0,
-          ignition: true,
-          level: 151.25,
-        },
-      ],
-      [
-        1735450816000,
-        156,
-        {
-          device_timestamp: 1735450816000,
-          speed: 0,
-          ignition: true,
-          level: 156,
-        },
-      ],
-      [
-        1735450816001,
-        156,
-        {
-          device_timestamp: 1735450816001,
-          speed: 0,
-          ignition: true,
-          level: 156,
-        },
-      ],
-    ],
-    areaStyle: {
-      color: {
-        colorStops: [
-          {
-            offset: 0,
-            color: "#ACD4FD",
-          },
-          {
-            offset: 1,
-            color: "#F5FAFF",
-          },
-        ],
-        x: 0,
-        y: 0,
-        x2: 0,
-        y2: 1,
-        type: "linear",
-        global: false,
-      },
-    },
+    device_timestamp: 1735259841000,
+    speed: 37,
+    ignition: false,
+    level: 229.75,
   },
   {
-    type: "line",
-    lineStyle: {
-      type: "solid",
-      color: "red",
-    },
-    symbol: "none",
-    data: [
-      [
-        1735450836000,
-        160.75,
-        {
-          device_timestamp: 1735450836000,
-          speed: 0,
-          ignition: false,
-          level: 160.75,
-        },
-      ],
-      [
-        1735450836000,
-        160.75,
-        {
-          device_timestamp: 1735450836000,
-          speed: 0,
-          ignition: false,
-          level: 160.75,
-        },
-      ],
-      [
-        1735450856000,
-        165.5,
-        {
-          device_timestamp: 1735450856000,
-          speed: 0,
-          ignition: false,
-          level: 165.5,
-        },
-      ],
-      [
-        1735450876000,
-        170.25,
-        {
-          device_timestamp: 1735450876000,
-          speed: 0,
-          ignition: false,
-          level: 170.25,
-        },
-      ],
-      [
-        1735450896000,
-        175,
-        {
-          device_timestamp: 1735450896000,
-          speed: 0,
-          ignition: false,
-          level: 175,
-        },
-      ],
-      [
-        1735450896001,
-        175,
-        {
-          device_timestamp: 1735450896001,
-          speed: 0,
-          ignition: false,
-          level: 175,
-        },
-      ],
-    ],
-    areaStyle: {
-      color: {
-        colorStops: [
-          {
-            offset: 0,
-            color: "#ACD4FD",
-          },
-          {
-            offset: 1,
-            color: "#F5FAFF",
-          },
-        ],
-        x: 0,
-        y: 0,
-        x2: 0,
-        y2: 1,
-        type: "linear",
-        global: false,
-      },
-    },
+    device_timestamp: 1735260001000,
+    speed: 48,
+    ignition: false,
+    level: 225.75,
   },
   {
-    type: "line",
-    lineStyle: {
-      type: "solid",
-      color: "blue",
-    },
-    symbol: "none",
-    data: [
-      [
-        1735450916000,
-        179.75,
-        {
-          device_timestamp: 1735450916000,
-          speed: 0,
-          ignition: true,
-          level: 179.75,
-        },
-      ],
-      [
-        1735450916000,
-        179.75,
-        {
-          device_timestamp: 1735450916000,
-          speed: 0,
-          ignition: true,
-          level: 179.75,
-        },
-      ],
-      [
-        1735450936000,
-        184.5,
-        {
-          device_timestamp: 1735450936000,
-          speed: 0,
-          ignition: true,
-          level: 184.5,
-        },
-      ],
-      [
-        1735450956000,
-        189.25,
-        {
-          device_timestamp: 1735450956000,
-          speed: 0,
-          ignition: true,
-          level: 189.25,
-        },
-      ],
-      [
-        1735450976000,
-        194,
-        {
-          device_timestamp: 1735450976000,
-          speed: 0,
-          ignition: true,
-          level: 194,
-        },
-      ],
-      [
-        1735450996000,
-        198.75,
-        {
-          device_timestamp: 1735450996000,
-          speed: 0,
-          ignition: true,
-          level: 198.75,
-        },
-      ],
-      [
-        1735451016000,
-        203.5,
-        {
-          device_timestamp: 1735451016000,
-          speed: 0,
-          ignition: true,
-          level: 203.5,
-        },
-      ],
-      [
-        1735451036000,
-        208.25,
-        {
-          device_timestamp: 1735451036000,
-          speed: 0,
-          ignition: true,
-          level: 208.25,
-        },
-      ],
-      [
-        1735451056000,
-        213,
-        {
-          device_timestamp: 1735451056000,
-          speed: 0,
-          ignition: true,
-          level: 213,
-        },
-      ],
-      [
-        1735451056001,
-        213,
-        {
-          device_timestamp: 1735451056001,
-          speed: 0,
-          ignition: true,
-          level: 213,
-        },
-      ],
-    ],
-    areaStyle: {
-      color: {
-        colorStops: [
-          {
-            offset: 0,
-            color: "#ACD4FD",
-          },
-          {
-            offset: 1,
-            color: "#F5FAFF",
-          },
-        ],
-        x: 0,
-        y: 0,
-        x2: 0,
-        y2: 1,
-        type: "linear",
-        global: false,
-      },
-    },
+    device_timestamp: 1735261201000,
+    speed: 0,
+    ignition: false,
+    level: 350,
+    isLowNetwork: true,
+    status: "FUEL_THEFT",
+    address: "Bavish Restaurant, VM3F+498, Tiruchirappalli, Tamil Nadu 620101",
+    fuel_reading_count: "317.00 L",
+    status_display_text: "Theft",
+    end_time: 1735261201000,
+    start_time: 1735260001000,
   },
   {
-    type: "line",
-    lineStyle: {
-      type: "solid",
-      color: "red",
-    },
-    symbol: "none",
-    data: [
-      [
-        1735451076000,
-        217.75,
-        {
-          device_timestamp: 1735451076000,
-          speed: 0,
-          ignition: false,
-          level: 217.75,
-        },
-      ],
-      [
-        1735451076000,
-        217.75,
-        {
-          device_timestamp: 1735451076000,
-          speed: 0,
-          ignition: false,
-          level: 217.75,
-        },
-      ],
-      [
-        1735451096000,
-        222.5,
-        {
-          device_timestamp: 1735451096000,
-          speed: 0,
-          ignition: false,
-          level: 222.5,
-        },
-      ],
-      [
-        1735451116000,
-        227.25,
-        {
-          device_timestamp: 1735451116000,
-          speed: 0,
-          ignition: false,
-          level: 227.25,
-        },
-      ],
-      [
-        1735451136000,
-        232,
-        {
-          device_timestamp: 1735451136000,
-          speed: 0,
-          ignition: false,
-          level: 232,
-        },
-      ],
-      [
-        1735451156000,
-        236.75,
-        {
-          device_timestamp: 1735451156000,
-          speed: 0,
-          ignition: false,
-          level: 236.75,
-        },
-      ],
-      [
-        1735451156001,
-        236.75,
-        {
-          device_timestamp: 1735451156001,
-          speed: 0,
-          ignition: false,
-          level: 236.75,
-        },
-      ],
-    ],
-    areaStyle: {
-      color: {
-        colorStops: [
-          {
-            offset: 0,
-            color: "#ACD4FD",
-          },
-          {
-            offset: 1,
-            color: "#F5FAFF",
-          },
-        ],
-        x: 0,
-        y: 0,
-        x2: 0,
-        y2: 1,
-        type: "linear",
-        global: false,
-      },
-    },
+    device_timestamp: 1735261221000,
+    speed: 0,
+    ignition: false,
+    level: 310.87,
   },
   {
-    type: "line",
-    lineStyle: {
-      type: "solid",
-      color: "blue",
-    },
-    symbol: "none",
-    data: [
-      [
-        1735451176000,
-        241.5,
-        {
-          device_timestamp: 1735451176000,
-          speed: 0,
-          ignition: true,
-          level: 241.5,
-        },
-      ],
-      [
-        1735451176000,
-        241.5,
-        {
-          device_timestamp: 1735451176000,
-          speed: 0,
-          ignition: true,
-          level: 241.5,
-        },
-      ],
-      [
-        1735451196000,
-        246.25,
-        {
-          device_timestamp: 1735451196000,
-          speed: 0,
-          ignition: true,
-          level: 246.25,
-        },
-      ],
-      [
-        1735451216000,
-        267.39,
-        {
-          device_timestamp: 1735451216000,
-          speed: 0,
-          ignition: true,
-          level: 267.39,
-        },
-      ],
-      [
-        1735451236000,
-        350,
-        {
-          device_timestamp: 1735451236000,
-          speed: 0,
-          ignition: true,
-          level: 350,
-        },
-      ],
-      [
-        1735451296000,
-        350,
-        {
-          device_timestamp: 1735451296000,
-          speed: 0,
-          ignition: true,
-          level: 350,
-        },
-      ],
-      [
-        1735451406000,
-        350,
-        {
-          device_timestamp: 1735451406000,
-          speed: 0,
-          ignition: true,
-          level: 350,
-        },
-      ],
-      [
-        1735451526000,
-        350,
-        {
-          device_timestamp: 1735451526000,
-          speed: 23.5,
-          ignition: true,
-          level: 350,
-        },
-      ],
-      [
-        1735451646000,
-        350,
-        {
-          device_timestamp: 1735451646000,
-          speed: 52,
-          ignition: true,
-          level: 350,
-        },
-      ],
-      [
-        1735451766000,
-        350,
-        {
-          device_timestamp: 1735451766000,
-          speed: 48,
-          ignition: true,
-          level: 350,
-        },
-      ],
-      [
-        1735451766001,
-        350,
-        {
-          device_timestamp: 1735451766001,
-          speed: 48,
-          ignition: true,
-          level: 350,
-        },
-      ],
-    ],
-    areaStyle: {
-      color: {
-        colorStops: [
-          {
-            offset: 0,
-            color: "#ACD4FD",
-          },
-          {
-            offset: 1,
-            color: "#F5FAFF",
-          },
-        ],
-        x: 0,
-        y: 0,
-        x2: 0,
-        y2: 1,
-        type: "linear",
-        global: false,
-      },
-    },
+    device_timestamp: 1735261241000,
+    speed: 0,
+    ignition: false,
+    level: 271.74,
   },
   {
-    type: "line",
-    lineStyle: {
-      type: "solid",
-      color: "red",
-    },
-    symbol: "none",
-    data: [
-      [
-        1735451886000,
-        260.37,
-        {
-          device_timestamp: 1735451886000,
-          speed: 46.5,
-          ignition: false,
-          level: 260.37,
-        },
-      ],
-      [
-        1735451886000,
-        260.37,
-        {
-          device_timestamp: 1735451886000,
-          speed: 46.5,
-          ignition: false,
-          level: 260.37,
-        },
-      ],
-      [
-        1735452006000,
-        236.63,
-        {
-          device_timestamp: 1735452006000,
-          speed: 51.5,
-          ignition: false,
-          level: 236.63,
-        },
-      ],
-      [
-        1735452096000,
-        226.5,
-        {
-          device_timestamp: 1735452096000,
-          speed: 50,
-          ignition: false,
-          level: 226.5,
-        },
-      ],
-      [
-        1735624310878,
-        249,
-        {
-          device_timestamp: 1735624310878,
-          speed: 0,
-          ignition: false,
-          level: 249,
-        },
-      ],
-      [
-        1735624330878,
-        246.75,
-        {
-          device_timestamp: 1735624330878,
-          speed: 0,
-          ignition: false,
-          level: 246.75,
-        },
-      ],
-      [
-        1735624350878,
-        244.5,
-        {
-          device_timestamp: 1735624350878,
-          speed: 0,
-          ignition: false,
-          level: 244.5,
-        },
-      ],
-      [
-        1735624350879,
-        244.5,
-        {
-          device_timestamp: 1735624350879,
-          speed: 0,
-          ignition: false,
-          level: 244.5,
-        },
-      ],
-    ],
-    areaStyle: {
-      color: {
-        colorStops: [
-          {
-            offset: 0,
-            color: "#ACD4FD",
-          },
-          {
-            offset: 1,
-            color: "#F5FAFF",
-          },
-        ],
-        x: 0,
-        y: 0,
-        x2: 0,
-        y2: 1,
-        type: "linear",
-        global: false,
-      },
-    },
+    device_timestamp: 1735261261000,
+    speed: 0,
+    ignition: false,
+    level: 249,
   },
   {
-    type: "line",
-    lineStyle: {
-      type: "dashed",
-      color: "gray",
-    },
-    symbol: "none",
-    data: [
-      [
-        1735624270878,
-        310.87,
-        {
-          device_timestamp: 1735624270878,
-          speed: 0,
-          ignition: false,
-          level: 310.87,
-          isLowNetwork: true,
-          status: "FUEL_THEFT",
-          address:
-            "Coimbatore - Nagapattinam Hwy, Annai Meena Nagar, Alangudi Bit, Punnainallur, Tamil Nadu 613501",
-          fuel_reading_count: "266.62 L",
-          status_display_text: "Theft",
-          end_time: 1735624270878,
-          start_time: 1735452096000,
-        },
-      ],
-    ],
+    device_timestamp: 1735261281000,
+    speed: 0,
+    ignition: false,
+    level: 246.75,
   },
   {
-    type: "line",
-    lineStyle: {
-      type: "solid",
-      color: "blue",
-    },
-    symbol: "none",
-    data: [
-      [
-        1735624370878,
-        242.25,
-        {
-          device_timestamp: 1735624370878,
-          speed: 0,
-          ignition: true,
-          level: 242.25,
-        },
-      ],
-      [
-        1735624370878,
-        242.25,
-        {
-          device_timestamp: 1735624370878,
-          speed: 0,
-          ignition: true,
-          level: 242.25,
-        },
-      ],
-      [
-        1735624390878,
-        240,
-        {
-          device_timestamp: 1735624390878,
-          speed: 0,
-          ignition: true,
-          level: 240,
-        },
-      ],
-      [
-        1735624410878,
-        237.75,
-        {
-          device_timestamp: 1735624410878,
-          speed: 0,
-          ignition: true,
-          level: 237.75,
-        },
-      ],
-      [
-        1735624430878,
-        235.5,
-        {
-          device_timestamp: 1735624430878,
-          speed: 0,
-          ignition: true,
-          level: 235.5,
-        },
-      ],
-      [
-        1735624450878,
-        233.25,
-        {
-          device_timestamp: 1735624450878,
-          speed: 0,
-          ignition: true,
-          level: 233.25,
-        },
-      ],
-      [
-        1735624470878,
-        231,
-        {
-          device_timestamp: 1735624470878,
-          speed: 0,
-          ignition: true,
-          level: 231,
-        },
-      ],
-      [
-        1735624490878,
-        228.75,
-        {
-          device_timestamp: 1735624490878,
-          speed: 0,
-          ignition: true,
-          level: 228.75,
-        },
-      ],
-      [
-        1735624490879,
-        228.75,
-        {
-          device_timestamp: 1735624490879,
-          speed: 0,
-          ignition: true,
-          level: 228.75,
-        },
-      ],
-    ],
-    areaStyle: {
-      color: {
-        colorStops: [
-          {
-            offset: 0,
-            color: "#ACD4FD",
-          },
-          {
-            offset: 1,
-            color: "#F5FAFF",
-          },
-        ],
-        x: 0,
-        y: 0,
-        x2: 0,
-        y2: 1,
-        type: "linear",
-        global: false,
-      },
-    },
+    device_timestamp: 1735261301000,
+    speed: 0,
+    ignition: false,
+    level: 244.5,
   },
   {
-    type: "line",
-    lineStyle: {
-      type: "solid",
-      color: "red",
-    },
-    symbol: "none",
-    data: [
-      [
-        1735624510878,
-        226.5,
-        {
-          device_timestamp: 1735624510878,
-          speed: 0,
-          ignition: false,
-          level: 226.5,
-        },
-      ],
-      [
-        1735624510878,
-        226.5,
-        {
-          device_timestamp: 1735624510878,
-          speed: 0,
-          ignition: false,
-          level: 226.5,
-        },
-      ],
-      [
-        1735624530878,
-        224.25,
-        {
-          device_timestamp: 1735624530878,
-          speed: 0,
-          ignition: false,
-          level: 224.25,
-        },
-      ],
-      [
-        1735624550878,
-        222,
-        {
-          device_timestamp: 1735624550878,
-          speed: 0,
-          ignition: false,
-          level: 222,
-        },
-      ],
-      [
-        1735624570878,
-        219.75,
-        {
-          device_timestamp: 1735624570878,
-          speed: 0,
-          ignition: false,
-          level: 219.75,
-        },
-      ],
-      [
-        1735624570879,
-        219.75,
-        {
-          device_timestamp: 1735624570879,
-          speed: 0,
-          ignition: false,
-          level: 219.75,
-        },
-      ],
-    ],
-    areaStyle: {
-      color: {
-        colorStops: [
-          {
-            offset: 0,
-            color: "#ACD4FD",
-          },
-          {
-            offset: 1,
-            color: "#F5FAFF",
-          },
-        ],
-        x: 0,
-        y: 0,
-        x2: 0,
-        y2: 1,
-        type: "linear",
-        global: false,
-      },
-    },
+    device_timestamp: 1735261321000,
+    speed: 0,
+    ignition: false,
+    level: 242.25,
   },
   {
-    type: "line",
-    lineStyle: {
-      type: "solid",
-      color: "blue",
-    },
-    symbol: "none",
-    data: [
-      [
-        1735624590878,
-        217.5,
-        {
-          device_timestamp: 1735624590878,
-          speed: 0,
-          ignition: true,
-          level: 217.5,
-        },
-      ],
-      [
-        1735624590878,
-        217.5,
-        {
-          device_timestamp: 1735624590878,
-          speed: 0,
-          ignition: true,
-          level: 217.5,
-        },
-      ],
-      [
-        1735624610878,
-        215.25,
-        {
-          device_timestamp: 1735624610878,
-          speed: 0,
-          ignition: true,
-          level: 215.25,
-        },
-      ],
-      [
-        1735624630878,
-        213,
-        {
-          device_timestamp: 1735624630878,
-          speed: 0,
-          ignition: true,
-          level: 213,
-        },
-      ],
-      [
-        1735624650878,
-        210.75,
-        {
-          device_timestamp: 1735624650878,
-          speed: 0,
-          ignition: true,
-          level: 210.75,
-        },
-      ],
-      [
-        1735624650879,
-        210.75,
-        {
-          device_timestamp: 1735624650879,
-          speed: 0,
-          ignition: true,
-          level: 210.75,
-        },
-      ],
-    ],
-    areaStyle: {
-      color: {
-        colorStops: [
-          {
-            offset: 0,
-            color: "#ACD4FD",
-          },
-          {
-            offset: 1,
-            color: "#F5FAFF",
-          },
-        ],
-        x: 0,
-        y: 0,
-        x2: 0,
-        y2: 1,
-        type: "linear",
-        global: false,
-      },
-    },
+    device_timestamp: 1735261341000,
+    speed: 0,
+    ignition: false,
+    level: 240,
   },
   {
-    type: "line",
-    lineStyle: {
-      type: "solid",
-      color: "red",
-    },
-    symbol: "none",
-    data: [
-      [
-        1735624670878,
-        208.5,
-        {
-          device_timestamp: 1735624670878,
-          speed: 0,
-          ignition: false,
-          level: 208.5,
-        },
-      ],
-      [
-        1735624670878,
-        208.5,
-        {
-          device_timestamp: 1735624670878,
-          speed: 0,
-          ignition: false,
-          level: 208.5,
-        },
-      ],
-      [
-        1735624690878,
-        206.25,
-        {
-          device_timestamp: 1735624690878,
-          speed: 0,
-          ignition: false,
-          level: 206.25,
-        },
-      ],
-      [
-        1735624710878,
-        204,
-        {
-          device_timestamp: 1735624710878,
-          speed: 0,
-          ignition: false,
-          level: 204,
-        },
-      ],
-      [
-        1735624730878,
-        201.75,
-        {
-          device_timestamp: 1735624730878,
-          speed: 0,
-          ignition: false,
-          level: 201.75,
-        },
-      ],
-      [
-        1735624750878,
-        199.5,
-        {
-          device_timestamp: 1735624750878,
-          speed: 0,
-          ignition: false,
-          level: 199.5,
-        },
-      ],
-      [
-        1735624770878,
-        197.25,
-        {
-          device_timestamp: 1735624770878,
-          speed: 0,
-          ignition: false,
-          level: 197.25,
-        },
-      ],
-      [
-        1735624790878,
-        195,
-        {
-          device_timestamp: 1735624790878,
-          speed: 0,
-          ignition: false,
-          level: 195,
-        },
-      ],
-      [
-        1735624810878,
-        192.75,
-        {
-          device_timestamp: 1735624810878,
-          speed: 0,
-          ignition: false,
-          level: 192.75,
-        },
-      ],
-      [
-        1735624830878,
-        190.5,
-        {
-          device_timestamp: 1735624830878,
-          speed: 0,
-          ignition: false,
-          level: 190.5,
-        },
-      ],
-      [
-        1735624830879,
-        190.5,
-        {
-          device_timestamp: 1735624830879,
-          speed: 0,
-          ignition: false,
-          level: 190.5,
-        },
-      ],
-    ],
-    areaStyle: {
-      color: {
-        colorStops: [
-          {
-            offset: 0,
-            color: "#ACD4FD",
-          },
-          {
-            offset: 1,
-            color: "#F5FAFF",
-          },
-        ],
-        x: 0,
-        y: 0,
-        x2: 0,
-        y2: 1,
-        type: "linear",
-        global: false,
-      },
-    },
+    device_timestamp: 1735261361000,
+    speed: 0,
+    ignition: false,
+    level: 237.75,
   },
   {
-    type: "line",
-    lineStyle: {
-      type: "solid",
-      color: "blue",
-    },
-    symbol: "none",
-    data: [
-      [
-        1735624850878,
-        188.25,
-        {
-          device_timestamp: 1735624850878,
-          speed: 0,
-          ignition: true,
-          level: 188.25,
-        },
-      ],
-      [
-        1735624850878,
-        188.25,
-        {
-          device_timestamp: 1735624850878,
-          speed: 0,
-          ignition: true,
-          level: 188.25,
-        },
-      ],
-      [
-        1735624870878,
-        186,
-        {
-          device_timestamp: 1735624870878,
-          speed: 0,
-          ignition: true,
-          level: 186,
-        },
-      ],
-      [
-        1735624890878,
-        183.75,
-        {
-          device_timestamp: 1735624890878,
-          speed: 0,
-          ignition: true,
-          level: 183.75,
-        },
-      ],
-      [
-        1735624910878,
-        181.5,
-        {
-          device_timestamp: 1735624910878,
-          speed: 0,
-          ignition: true,
-          level: 181.5,
-        },
-      ],
-      [
-        1735624930878,
-        179.25,
-        {
-          device_timestamp: 1735624930878,
-          speed: 0,
-          ignition: true,
-          level: 179.25,
-        },
-      ],
-      [
-        1735624950878,
-        177,
-        {
-          device_timestamp: 1735624950878,
-          speed: 0,
-          ignition: true,
-          level: 177,
-        },
-      ],
-      [
-        1735624970878,
-        174.75,
-        {
-          device_timestamp: 1735624970878,
-          speed: 0,
-          ignition: true,
-          level: 174.75,
-        },
-      ],
-      [
-        1735624990878,
-        172.5,
-        {
-          device_timestamp: 1735624990878,
-          speed: 0,
-          ignition: true,
-          level: 172.5,
-        },
-      ],
-      [
-        1735625010878,
-        170.25,
-        {
-          device_timestamp: 1735625010878,
-          speed: 0,
-          ignition: true,
-          level: 170.25,
-        },
-      ],
-      [
-        1735625030878,
-        168,
-        {
-          device_timestamp: 1735625030878,
-          speed: 0,
-          ignition: true,
-          level: 168,
-        },
-      ],
-      [
-        1735625050878,
-        165.75,
-        {
-          device_timestamp: 1735625050878,
-          speed: 0,
-          ignition: true,
-          level: 165.75,
-        },
-      ],
-      [
-        1735625070878,
-        163.5,
-        {
-          device_timestamp: 1735625070878,
-          speed: 0,
-          ignition: true,
-          level: 163.5,
-        },
-      ],
-      [
-        1735625090878,
-        161.25,
-        {
-          device_timestamp: 1735625090878,
-          speed: 0,
-          ignition: true,
-          level: 161.25,
-        },
-      ],
-      [
-        1735625110878,
-        159,
-        {
-          device_timestamp: 1735625110878,
-          speed: 0,
-          ignition: true,
-          level: 159,
-        },
-      ],
-      [
-        1735625130878,
-        156.75,
-        {
-          device_timestamp: 1735625130878,
-          speed: 0,
-          ignition: true,
-          level: 156.75,
-        },
-      ],
-      [
-        1735625150878,
-        154.5,
-        {
-          device_timestamp: 1735625150878,
-          speed: 0,
-          ignition: true,
-          level: 154.5,
-        },
-      ],
-      [
-        1735625170878,
-        152.25,
-        {
-          device_timestamp: 1735625170878,
-          speed: 0,
-          ignition: true,
-          level: 152.25,
-        },
-      ],
-      [
-        1735625190878,
-        150,
-        {
-          device_timestamp: 1735625190878,
-          speed: 0,
-          ignition: true,
-          level: 150,
-        },
-      ],
-      [
-        1735625210878,
-        147.75,
-        {
-          device_timestamp: 1735625210878,
-          speed: 0,
-          ignition: true,
-          level: 147.75,
-        },
-      ],
-      [
-        1735625230878,
-        145.5,
-        {
-          device_timestamp: 1735625230878,
-          speed: 0,
-          ignition: true,
-          level: 145.5,
-        },
-      ],
-      [
-        1735625250878,
-        143.25,
-        {
-          device_timestamp: 1735625250878,
-          speed: 0,
-          ignition: true,
-          level: 143.25,
-        },
-      ],
-      [
-        1735625270878,
-        141,
-        {
-          device_timestamp: 1735625270878,
-          speed: 0,
-          ignition: true,
-          level: 141,
-        },
-      ],
-      [
-        1735625290878,
-        138.75,
-        {
-          device_timestamp: 1735625290878,
-          speed: 0,
-          ignition: true,
-          level: 138.75,
-        },
-      ],
-      [
-        1735625290879,
-        138.75,
-        {
-          device_timestamp: 1735625290879,
-          speed: 0,
-          ignition: true,
-          level: 138.75,
-        },
-      ],
-    ],
-    areaStyle: {
-      color: {
-        colorStops: [
-          {
-            offset: 0,
-            color: "#ACD4FD",
-          },
-          {
-            offset: 1,
-            color: "#F5FAFF",
-          },
-        ],
-        x: 0,
-        y: 0,
-        x2: 0,
-        y2: 1,
-        type: "linear",
-        global: false,
-      },
-    },
+    device_timestamp: 1735261381000,
+    speed: 0,
+    ignition: false,
+    level: 235.5,
   },
   {
-    type: "line",
-    lineStyle: {
-      type: "solid",
-      color: "red",
-    },
-    symbol: "none",
-    data: [
-      [
-        1735625310878,
-        136.5,
-        {
-          device_timestamp: 1735625310878,
-          speed: 0,
-          ignition: false,
-          level: 136.5,
-        },
-      ],
-      [
-        1735625310878,
-        136.5,
-        {
-          device_timestamp: 1735625310878,
-          speed: 0,
-          ignition: false,
-          level: 136.5,
-        },
-      ],
-      [
-        1735625330878,
-        134.25,
-        {
-          device_timestamp: 1735625330878,
-          speed: 0,
-          ignition: false,
-          level: 134.25,
-        },
-      ],
-      [
-        1735625350878,
-        132,
-        {
-          device_timestamp: 1735625350878,
-          speed: 0,
-          ignition: false,
-          level: 132,
-        },
-      ],
-      [
-        1735625370878,
-        129.75,
-        {
-          device_timestamp: 1735625370878,
-          speed: 0,
-          ignition: false,
-          level: 129.75,
-        },
-      ],
-      [
-        1735625390878,
-        127.5,
-        {
-          device_timestamp: 1735625390878,
-          speed: 0,
-          ignition: false,
-          level: 127.5,
-        },
-      ],
-      [
-        1735625410878,
-        125.25,
-        {
-          device_timestamp: 1735625410878,
-          speed: 0,
-          ignition: false,
-          level: 125.25,
-        },
-      ],
-      [
-        1735625430878,
-        123,
-        {
-          device_timestamp: 1735625430878,
-          speed: 0,
-          ignition: false,
-          level: 123,
-        },
-      ],
-      [
-        1735625450878,
-        120.75,
-        {
-          device_timestamp: 1735625450878,
-          speed: 0,
-          ignition: false,
-          level: 120.75,
-        },
-      ],
-      [
-        1735625470878,
-        118.5,
-        {
-          device_timestamp: 1735625470878,
-          speed: 0,
-          ignition: false,
-          level: 118.5,
-        },
-      ],
-      [
-        1735625490878,
-        116.25,
-        {
-          device_timestamp: 1735625490878,
-          speed: 0,
-          ignition: false,
-          level: 116.25,
-        },
-      ],
-      [
-        1735625510878,
-        114,
-        {
-          device_timestamp: 1735625510878,
-          speed: 0,
-          ignition: false,
-          level: 114,
-        },
-      ],
-      [
-        1735625530878,
-        111.75,
-        {
-          device_timestamp: 1735625530878,
-          speed: 0,
-          ignition: false,
-          level: 111.75,
-        },
-      ],
-      [
-        1735625550878,
-        109.5,
-        {
-          device_timestamp: 1735625550878,
-          speed: 0,
-          ignition: false,
-          level: 109.5,
-        },
-      ],
-      [
-        1735625570878,
-        107.25,
-        {
-          device_timestamp: 1735625570878,
-          speed: 0,
-          ignition: false,
-          level: 107.25,
-        },
-      ],
-      [
-        1735625590878,
-        105,
-        {
-          device_timestamp: 1735625590878,
-          speed: 0,
-          ignition: false,
-          level: 105,
-        },
-      ],
-      [
-        1735625610878,
-        102.75,
-        {
-          device_timestamp: 1735625610878,
-          speed: 0,
-          ignition: false,
-          level: 102.75,
-        },
-      ],
-      [
-        1735625630878,
-        100.5,
-        {
-          device_timestamp: 1735625630878,
-          speed: 0,
-          ignition: false,
-          level: 100.5,
-        },
-      ],
-      [
-        1735625650878,
-        98.25,
-        {
-          device_timestamp: 1735625650878,
-          speed: 0,
-          ignition: false,
-          level: 98.25,
-        },
-      ],
-      [
-        1735625670878,
-        96,
-        {
-          device_timestamp: 1735625670878,
-          speed: 0,
-          ignition: false,
-          level: 96,
-        },
-      ],
-      [
-        1735625690878,
-        93.75,
-        {
-          device_timestamp: 1735625690878,
-          speed: 0,
-          ignition: false,
-          level: 93.75,
-        },
-      ],
-      [
-        1735625710878,
-        91.5,
-        {
-          device_timestamp: 1735625710878,
-          speed: 0,
-          ignition: false,
-          level: 91.5,
-        },
-      ],
-      [
-        1735625730878,
-        89.25,
-        {
-          device_timestamp: 1735625730878,
-          speed: 0,
-          ignition: false,
-          level: 89.25,
-        },
-      ],
-      [
-        1735625750878,
-        87,
-        {
-          device_timestamp: 1735625750878,
-          speed: 0,
-          ignition: false,
-          level: 87,
-        },
-      ],
-      [
-        1735625770878,
-        84.75,
-        {
-          device_timestamp: 1735625770878,
-          speed: 0,
-          ignition: false,
-          level: 84.75,
-        },
-      ],
-      [
-        1735625790878,
-        82.5,
-        {
-          device_timestamp: 1735625790878,
-          speed: 0,
-          ignition: false,
-          level: 82.5,
-        },
-      ],
-      [
-        1735625810878,
-        80.25,
-        {
-          device_timestamp: 1735625810878,
-          speed: 0,
-          ignition: false,
-          level: 80.25,
-        },
-      ],
-      [
-        1735625830878,
-        78,
-        {
-          device_timestamp: 1735625830878,
-          speed: 0,
-          ignition: false,
-          level: 78,
-        },
-      ],
-      [
-        1735625850878,
-        75.75,
-        {
-          device_timestamp: 1735625850878,
-          speed: 0,
-          ignition: false,
-          level: 75.75,
-        },
-      ],
-      [
-        1735625870878,
-        73.5,
-        {
-          device_timestamp: 1735625870878,
-          speed: 0,
-          ignition: false,
-          level: 73.5,
-        },
-      ],
-      [
-        1735625890878,
-        71.25,
-        {
-          device_timestamp: 1735625890878,
-          speed: 0,
-          ignition: false,
-          level: 71.25,
-        },
-      ],
-      [
-        1735625910878,
-        69,
-        {
-          device_timestamp: 1735625910878,
-          speed: 0,
-          ignition: false,
-          level: 69,
-        },
-      ],
-      [
-        1735625930878,
-        66.75,
-        {
-          device_timestamp: 1735625930878,
-          speed: 0,
-          ignition: false,
-          level: 66.75,
-        },
-      ],
-      [
-        1735625950878,
-        64.5,
-        {
-          device_timestamp: 1735625950878,
-          speed: 0,
-          ignition: false,
-          level: 64.5,
-        },
-      ],
-      [
-        1735625970878,
-        62.25,
-        {
-          device_timestamp: 1735625970878,
-          speed: 0,
-          ignition: false,
-          level: 62.25,
-        },
-      ],
-      [
-        1735625990878,
-        60,
-        {
-          device_timestamp: 1735625990878,
-          speed: 0,
-          ignition: false,
-          level: 60,
-        },
-      ],
-      [
-        1735626010878,
-        57.75,
-        {
-          device_timestamp: 1735626010878,
-          speed: 0,
-          ignition: false,
-          level: 57.75,
-        },
-      ],
-      [
-        1735626030878,
-        55.5,
-        {
-          device_timestamp: 1735626030878,
-          speed: 0,
-          ignition: false,
-          level: 55.5,
-        },
-      ],
-      [
-        1735626030879,
-        55.5,
-        {
-          device_timestamp: 1735626030879,
-          speed: 0,
-          ignition: false,
-          level: 55.5,
-        },
-      ],
-    ],
-    areaStyle: {
-      color: {
-        colorStops: [
-          {
-            offset: 0,
-            color: "#ACD4FD",
-          },
-          {
-            offset: 1,
-            color: "#F5FAFF",
-          },
-        ],
-        x: 0,
-        y: 0,
-        x2: 0,
-        y2: 1,
-        type: "linear",
-        global: false,
-      },
-    },
+    device_timestamp: 1735261401000,
+    speed: 0,
+    ignition: false,
+    level: 233.25,
   },
   {
-    type: "line",
-    lineStyle: {
-      type: "solid",
-      color: "blue",
-    },
-    symbol: "none",
-    data: [
-      [
-        1735626050878,
-        53.25,
-        {
-          device_timestamp: 1735626050878,
-          speed: 25,
-          ignition: true,
-          level: 53.25,
-        },
-      ],
-      [
-        1735626050878,
-        53.25,
-        {
-          device_timestamp: 1735626050878,
-          speed: 25,
-          ignition: true,
-          level: 53.25,
-        },
-      ],
-      [
-        1735626070878,
-        51,
-        {
-          device_timestamp: 1735626070878,
-          speed: 28,
-          ignition: true,
-          level: 51,
-        },
-      ],
-      [
-        1735626090878,
-        48.75,
-        {
-          device_timestamp: 1735626090878,
-          speed: 39,
-          ignition: true,
-          level: 48.75,
-        },
-      ],
-      [
-        1735626110878,
-        46.5,
-        {
-          device_timestamp: 1735626110878,
-          speed: 46,
-          ignition: true,
-          level: 46.5,
-        },
-      ],
-      [
-        1735626130878,
-        44.25,
-        {
-          device_timestamp: 1735626130878,
-          speed: 48,
-          ignition: true,
-          level: 44.25,
-        },
-      ],
-      [
-        1735626190878,
-        37.5,
-        {
-          device_timestamp: 1735626190878,
-          speed: 46,
-          ignition: true,
-          level: 37.5,
-        },
-      ],
-      [
-        1735626300878,
-        25.13,
-        {
-          device_timestamp: 1735626300878,
-          speed: 51,
-          ignition: true,
-          level: 25.13,
-        },
-      ],
-      [
-        1735626420878,
-        11.63,
-        {
-          device_timestamp: 1735626420878,
-          speed: 44,
-          ignition: true,
-          level: 11.63,
-        },
-      ],
-      [
-        1735626540878,
-        0,
-        {
-          device_timestamp: 1735626540878,
-          speed: 46.5,
-          ignition: true,
-          level: 0,
-        },
-      ],
-      [
-        1735626540879,
-        0,
-        {
-          device_timestamp: 1735626540879,
-          speed: 46.5,
-          ignition: true,
-          level: 0,
-        },
-      ],
-    ],
-    areaStyle: {
-      color: {
-        colorStops: [
-          {
-            offset: 0,
-            color: "#ACD4FD",
-          },
-          {
-            offset: 1,
-            color: "#F5FAFF",
-          },
-        ],
-        x: 0,
-        y: 0,
-        x2: 0,
-        y2: 1,
-        type: "linear",
-        global: false,
-      },
-    },
+    device_timestamp: 1735261421000,
+    speed: 0,
+    ignition: false,
+    level: 231,
   },
   {
-    type: "line",
-    lineStyle: {
-      type: "solid",
-      color: "red",
-    },
-    symbol: "none",
-    data: [
-      [
-        1735626620878,
-        0,
-        {
-          device_timestamp: 1735626620878,
-          speed: 51,
-          ignition: false,
-          level: 0,
-        },
-      ],
-      [
-        1735626620878,
-        0,
-        {
-          device_timestamp: 1735626620878,
-          speed: 51,
-          ignition: false,
-          level: 0,
-        },
-      ],
-    ],
-    areaStyle: {
-      color: {
-        colorStops: [
-          {
-            offset: 0,
-            color: "#ACD4FD",
-          },
-          {
-            offset: 1,
-            color: "#F5FAFF",
-          },
-        ],
-        x: 0,
-        y: 0,
-        x2: 0,
-        y2: 1,
-        type: "linear",
-        global: false,
-      },
-    },
+    device_timestamp: 1735261441000,
+    speed: 0,
+    ignition: false,
+    level: 228.75,
   },
   {
-    type: "line",
-    lineStyle: {
-      type: "dashed",
-      color: "gray",
-    },
-    symbol: "none",
-    data: [
-      [
-        1735668900000,
-        0,
-        {
-          device_timestamp: 1735668900000,
-          level: 0,
-          isLowNetwork: true,
-        },
-      ],
-    ],
+    device_timestamp: 1735261461000,
+    speed: 0,
+    ignition: false,
+    level: 226.5,
+  },
+  {
+    device_timestamp: 1735261481000,
+    speed: 0,
+    ignition: false,
+    level: 224.25,
+  },
+  {
+    device_timestamp: 1735261501000,
+    speed: 0,
+    ignition: false,
+    level: 222,
+  },
+  {
+    device_timestamp: 1735261521000,
+    speed: 0,
+    ignition: false,
+    level: 219.75,
+  },
+  {
+    device_timestamp: 1735261541000,
+    speed: 0,
+    ignition: false,
+    level: 217.5,
+  },
+  {
+    device_timestamp: 1735261561000,
+    speed: 0,
+    ignition: false,
+    level: 215.25,
+  },
+  {
+    device_timestamp: 1735261581000,
+    speed: 0,
+    ignition: false,
+    level: 213,
+  },
+  {
+    device_timestamp: 1735261601000,
+    speed: 0,
+    ignition: false,
+    level: 210.75,
+  },
+  {
+    device_timestamp: 1735261621000,
+    speed: 0,
+    ignition: false,
+    level: 208.5,
+  },
+  {
+    device_timestamp: 1735261641000,
+    speed: 0,
+    ignition: false,
+    level: 206.25,
+  },
+  {
+    device_timestamp: 1735261661000,
+    speed: 0,
+    ignition: false,
+    level: 204,
+  },
+  {
+    device_timestamp: 1735261681000,
+    speed: 0,
+    ignition: false,
+    level: 201.75,
+  },
+  {
+    device_timestamp: 1735261701000,
+    speed: 0,
+    ignition: false,
+    level: 199.5,
+  },
+  {
+    device_timestamp: 1735261721000,
+    speed: 0,
+    ignition: false,
+    level: 197.25,
+  },
+  {
+    device_timestamp: 1735261741000,
+    speed: 0,
+    ignition: false,
+    level: 195,
+  },
+  {
+    device_timestamp: 1735261761000,
+    speed: 0,
+    ignition: false,
+    level: 192.75,
+  },
+  {
+    device_timestamp: 1735261781000,
+    speed: 0,
+    ignition: false,
+    level: 190.5,
+  },
+  {
+    device_timestamp: 1735261801000,
+    speed: 0,
+    ignition: false,
+    level: 188.25,
+  },
+  {
+    device_timestamp: 1735261821000,
+    speed: 0,
+    ignition: false,
+    level: 186,
+  },
+  {
+    device_timestamp: 1735261841000,
+    speed: 0,
+    ignition: false,
+    level: 183.75,
+  },
+  {
+    device_timestamp: 1735261861000,
+    speed: 0,
+    ignition: false,
+    level: 181.5,
+  },
+  {
+    device_timestamp: 1735261881000,
+    speed: 0,
+    ignition: false,
+    level: 179.25,
+  },
+  {
+    device_timestamp: 1735261901000,
+    speed: 0,
+    ignition: false,
+    level: 177,
+  },
+  {
+    device_timestamp: 1735261921000,
+    speed: 0,
+    ignition: false,
+    level: 174.75,
+  },
+  {
+    device_timestamp: 1735261941000,
+    speed: 0,
+    ignition: false,
+    level: 172.5,
+  },
+  {
+    device_timestamp: 1735261961000,
+    speed: 0,
+    ignition: false,
+    level: 170.25,
+  },
+  {
+    device_timestamp: 1735261981000,
+    speed: 0,
+    ignition: false,
+    level: 168,
+  },
+  {
+    device_timestamp: 1735262001000,
+    speed: 0,
+    ignition: false,
+    level: 165.75,
+  },
+  {
+    device_timestamp: 1735262021000,
+    speed: 0,
+    ignition: false,
+    level: 163.5,
+  },
+  {
+    device_timestamp: 1735262041000,
+    speed: 0,
+    ignition: false,
+    level: 161.25,
+  },
+  {
+    device_timestamp: 1735262061000,
+    speed: 0,
+    ignition: false,
+    level: 159,
+  },
+  {
+    device_timestamp: 1735262081000,
+    speed: 0,
+    ignition: false,
+    level: 156.75,
+  },
+  {
+    device_timestamp: 1735262101000,
+    speed: 0,
+    ignition: false,
+    level: 154.5,
+  },
+  {
+    device_timestamp: 1735262121000,
+    speed: 0,
+    ignition: false,
+    level: 152.25,
+  },
+  {
+    device_timestamp: 1735262141000,
+    speed: 0,
+    ignition: false,
+    level: 150,
+  },
+  {
+    device_timestamp: 1735262161000,
+    speed: 0,
+    ignition: false,
+    level: 147.75,
+  },
+  {
+    device_timestamp: 1735262181000,
+    speed: 0,
+    ignition: false,
+    level: 145.5,
+  },
+  {
+    device_timestamp: 1735262201000,
+    speed: 0,
+    ignition: false,
+    level: 143.25,
+  },
+  {
+    device_timestamp: 1735262221000,
+    speed: 0,
+    ignition: false,
+    level: 141,
+  },
+  {
+    device_timestamp: 1735262241000,
+    speed: 0,
+    ignition: false,
+    level: 138.75,
+  },
+  {
+    device_timestamp: 1735262261000,
+    speed: 0,
+    ignition: false,
+    level: 136.5,
+  },
+  {
+    device_timestamp: 1735262281000,
+    speed: 0,
+    ignition: false,
+    level: 134.25,
+  },
+  {
+    device_timestamp: 1735262301000,
+    speed: 0,
+    ignition: false,
+    level: 132,
+  },
+  {
+    device_timestamp: 1735262321000,
+    speed: 0,
+    ignition: false,
+    level: 129.75,
+  },
+  {
+    device_timestamp: 1735262341000,
+    speed: 0,
+    ignition: false,
+    level: 127.5,
+  },
+  {
+    device_timestamp: 1735262361000,
+    speed: 0,
+    ignition: false,
+    level: 125.25,
+  },
+  {
+    device_timestamp: 1735262381000,
+    speed: 0,
+    ignition: false,
+    level: 123,
+  },
+  {
+    device_timestamp: 1735262401000,
+    speed: 0,
+    ignition: false,
+    level: 120.75,
+  },
+  {
+    device_timestamp: 1735262421000,
+    speed: 0,
+    ignition: false,
+    level: 118.5,
+  },
+  {
+    device_timestamp: 1735262441000,
+    speed: 0,
+    ignition: false,
+    level: 116.25,
+  },
+  {
+    device_timestamp: 1735262461000,
+    speed: 0,
+    ignition: false,
+    level: 114,
+  },
+  {
+    device_timestamp: 1735262481000,
+    speed: 0,
+    ignition: false,
+    level: 111.75,
+  },
+  {
+    device_timestamp: 1735262501000,
+    speed: 0,
+    ignition: false,
+    level: 109.5,
+  },
+  {
+    device_timestamp: 1735262521000,
+    speed: 0,
+    ignition: false,
+    level: 107.25,
+  },
+  {
+    device_timestamp: 1735262541000,
+    speed: 0,
+    ignition: false,
+    level: 105,
+  },
+  {
+    device_timestamp: 1735262561000,
+    speed: 0,
+    ignition: false,
+    level: 102.75,
+  },
+  {
+    device_timestamp: 1735262581000,
+    speed: 0,
+    ignition: false,
+    level: 100.5,
+  },
+  {
+    device_timestamp: 1735262601000,
+    speed: 0,
+    ignition: false,
+    level: 98.25,
+  },
+  {
+    device_timestamp: 1735262621000,
+    speed: 0,
+    ignition: false,
+    level: 96,
+  },
+  {
+    device_timestamp: 1735262641000,
+    speed: 0,
+    ignition: false,
+    level: 93.75,
+  },
+  {
+    device_timestamp: 1735262661000,
+    speed: 0,
+    ignition: false,
+    level: 91.5,
+  },
+  {
+    device_timestamp: 1735262681000,
+    speed: 0,
+    ignition: false,
+    level: 89.25,
+  },
+  {
+    device_timestamp: 1735262701000,
+    speed: 0,
+    ignition: false,
+    level: 87,
+  },
+  {
+    device_timestamp: 1735262721000,
+    speed: 0,
+    ignition: false,
+    level: 84.75,
+  },
+  {
+    device_timestamp: 1735262741000,
+    speed: 0,
+    ignition: false,
+    level: 82.5,
+  },
+  {
+    device_timestamp: 1735262761000,
+    speed: 0,
+    ignition: false,
+    level: 80.25,
+  },
+  {
+    device_timestamp: 1735262781000,
+    speed: 0,
+    ignition: false,
+    level: 78,
+  },
+  {
+    device_timestamp: 1735262801000,
+    speed: 0,
+    ignition: false,
+    level: 75.75,
+  },
+  {
+    device_timestamp: 1735262821000,
+    speed: 0,
+    ignition: false,
+    level: 73.5,
+  },
+  {
+    device_timestamp: 1735262841000,
+    speed: 0,
+    ignition: false,
+    level: 71.25,
+  },
+  {
+    device_timestamp: 1735262861000,
+    speed: 0,
+    ignition: false,
+    level: 69,
+  },
+  {
+    device_timestamp: 1735262881000,
+    speed: 0,
+    ignition: false,
+    level: 66.75,
+  },
+  {
+    device_timestamp: 1735262901000,
+    speed: 0,
+    ignition: false,
+    level: 64.5,
+  },
+  {
+    device_timestamp: 1735262921000,
+    speed: 0,
+    ignition: false,
+    level: 62.25,
+  },
+  {
+    device_timestamp: 1735262941000,
+    speed: 0,
+    ignition: false,
+    level: 60,
+  },
+  {
+    device_timestamp: 1735262961000,
+    speed: 0,
+    ignition: false,
+    level: 57.75,
+  },
+  {
+    device_timestamp: 1735262981000,
+    speed: 0,
+    ignition: false,
+    level: 55.5,
+  },
+  {
+    device_timestamp: 1735263001000,
+    speed: 23,
+    ignition: false,
+    level: 53.25,
+  },
+  {
+    device_timestamp: 1735263021000,
+    speed: 16,
+    ignition: false,
+    level: 51,
+  },
+  {
+    device_timestamp: 1735263041000,
+    speed: 25,
+    ignition: false,
+    level: 48.75,
+  },
+  {
+    device_timestamp: 1735263061000,
+    speed: 19,
+    ignition: false,
+    level: 46.5,
+  },
+  {
+    device_timestamp: 1735263081000,
+    speed: 0,
+    ignition: false,
+    level: 44.25,
+  },
+  {
+    device_timestamp: 1735263101000,
+    speed: 5,
+    ignition: false,
+    level: 42,
+  },
+  {
+    device_timestamp: 1735263121000,
+    speed: 23,
+    ignition: false,
+    level: 39.75,
+  },
+  {
+    device_timestamp: 1735263141000,
+    speed: 35,
+    ignition: false,
+    level: 37.5,
+  },
+  {
+    device_timestamp: 1735263161000,
+    speed: 45,
+    ignition: false,
+    level: 35.25,
+  },
+  {
+    device_timestamp: 1735263181000,
+    speed: 41,
+    ignition: false,
+    level: 33,
+  },
+  {
+    device_timestamp: 1735263331000,
+    speed: 28,
+    ignition: false,
+    level: 16.13,
+  },
+  {
+    device_timestamp: 1735263531000,
+    speed: 40,
+    ignition: false,
+    level: 0,
+  },
+  {
+    device_timestamp: 1735264908000,
+    speed: 0,
+    ignition: false,
+    level: 350,
+    isLowNetwork: true,
+    status: null,
+    address: null,
+    fuel_reading_count: null,
+    status_display_text: null,
+    end_time: 1735264908000,
+    start_time: 1735263531000,
+  },
+  {
+    device_timestamp: 1735265128000,
+    speed: 0,
+    ignition: false,
+    level: 350,
+  },
+  {
+    device_timestamp: 1735265428000,
+    speed: 0,
+    ignition: false,
+    level: 350,
+  },
+  {
+    device_timestamp: 1735265728000,
+    speed: 0,
+    ignition: false,
+    level: 350,
+  },
+  {
+    device_timestamp: 1735266028000,
+    speed: 0,
+    ignition: false,
+    level: 224.25,
+  },
+  {
+    device_timestamp: 1735266328000,
+    speed: 0,
+    ignition: false,
+    level: 190.5,
+  },
+  {
+    device_timestamp: 1735266628000,
+    speed: 0,
+    ignition: false,
+    level: 156.75,
+  },
+  {
+    device_timestamp: 1735266928000,
+    speed: 24,
+    ignition: false,
+    level: 123,
+  },
+  {
+    device_timestamp: 1735267158000,
+    speed: 49,
+    ignition: false,
+    level: 97.13,
+  },
+  {
+    device_timestamp: 1735281982000,
+    speed: 40,
+    ignition: false,
+    level: 108.5,
+    isLowNetwork: true,
+    status: null,
+    address: null,
+    fuel_reading_count: null,
+    status_display_text: null,
+    end_time: 1735281982362,
+    start_time: 1735267158000,
+  },
+  {
+    device_timestamp: 1735282132000,
+    speed: 42,
+    ignition: false,
+    level: 93.5,
+  },
+  {
+    device_timestamp: 1735351308000,
+    speed: 0,
+    ignition: false,
+    level: 249,
+    isLowNetwork: true,
+    status: null,
+    address: null,
+    fuel_reading_count: null,
+    status_display_text: null,
+    end_time: 1735351308000,
+    start_time: 1735282132362,
+  },
+  {
+    device_timestamp: 1735351528000,
+    speed: 0,
+    ignition: false,
+    level: 224.25,
+  },
+  {
+    device_timestamp: 1735351828000,
+    speed: 0,
+    ignition: false,
+    level: 190.5,
+  },
+  {
+    device_timestamp: 1735352128000,
+    speed: 0,
+    ignition: false,
+    level: 156.75,
+  },
+  {
+    device_timestamp: 1735352428000,
+    speed: 0,
+    ignition: false,
+    level: 123,
+  },
+  {
+    device_timestamp: 1735352728000,
+    speed: 0,
+    ignition: false,
+    level: 89.25,
+  },
+  {
+    device_timestamp: 1735353028000,
+    speed: 0,
+    ignition: false,
+    level: 55.5,
+  },
+  {
+    device_timestamp: 1735353328000,
+    speed: 52,
+    ignition: false,
+    level: 21.75,
+  },
+  {
+    device_timestamp: 1735353568000,
+    speed: 52,
+    ignition: false,
+    level: 0,
+  },
+  {
+    device_timestamp: 1735449756000,
+    speed: 0,
+    ignition: false,
+    level: 267.39,
+    isLowNetwork: true,
+    status: null,
+    address: null,
+    fuel_reading_count: null,
+    status_display_text: null,
+    end_time: 1735449756000,
+    start_time: 1735353568000,
+  },
+  {
+    device_timestamp: 1735449936000,
+    speed: 0,
+    ignition: false,
+    level: 208.25,
+  },
+  {
+    device_timestamp: 1735450236000,
+    speed: 0,
+    ignition: false,
+    level: 137,
+  },
+  {
+    device_timestamp: 1735450636000,
+    speed: 0,
+    ignition: false,
+    level: 113.25,
+    isLowNetwork: null,
+    status: "REFUELING",
+    address:
+      "Coimbatore - Nagapattinam Hwy, Annai Meena Nagar, Alangudi Bit, Punnainallur, Tamil Nadu 613501",
+    fuel_reading_count: "236.75 L",
+    status_display_text: "Refuel",
+    end_time: null,
+    start_time: null,
+  },
+  {
+    device_timestamp: 1735450656000,
+    speed: 0,
+    ignition: false,
+    level: 118,
+  },
+  {
+    device_timestamp: 1735450676000,
+    speed: 0,
+    ignition: false,
+    level: 122.75,
+  },
+  {
+    device_timestamp: 1735450696000,
+    speed: 0,
+    ignition: false,
+    level: 127.5,
+  },
+  {
+    device_timestamp: 1735450716000,
+    speed: 0,
+    ignition: false,
+    level: 132.25,
+  },
+  {
+    device_timestamp: 1735450736000,
+    speed: 0,
+    ignition: false,
+    level: 137,
+  },
+  {
+    device_timestamp: 1735450756000,
+    speed: 0,
+    ignition: false,
+    level: 141.75,
+  },
+  {
+    device_timestamp: 1735450776000,
+    speed: 0,
+    ignition: false,
+    level: 146.5,
+  },
+  {
+    device_timestamp: 1735450796000,
+    speed: 0,
+    ignition: false,
+    level: 151.25,
+  },
+  {
+    device_timestamp: 1735450816000,
+    speed: 0,
+    ignition: false,
+    level: 156,
+  },
+  {
+    device_timestamp: 1735450836000,
+    speed: 0,
+    ignition: false,
+    level: 160.75,
+  },
+  {
+    device_timestamp: 1735450856000,
+    speed: 0,
+    ignition: false,
+    level: 165.5,
+  },
+  {
+    device_timestamp: 1735450876000,
+    speed: 0,
+    ignition: false,
+    level: 170.25,
+  },
+  {
+    device_timestamp: 1735450896000,
+    speed: 0,
+    ignition: false,
+    level: 175,
+  },
+  {
+    device_timestamp: 1735450916000,
+    speed: 0,
+    ignition: false,
+    level: 179.75,
+  },
+  {
+    device_timestamp: 1735450936000,
+    speed: 0,
+    ignition: false,
+    level: 184.5,
+  },
+  {
+    device_timestamp: 1735450956000,
+    speed: 0,
+    ignition: false,
+    level: 189.25,
+  },
+  {
+    device_timestamp: 1735450976000,
+    speed: 0,
+    ignition: false,
+    level: 194,
+  },
+  {
+    device_timestamp: 1735450996000,
+    speed: 0,
+    ignition: false,
+    level: 198.75,
+  },
+  {
+    device_timestamp: 1735451016000,
+    speed: 0,
+    ignition: false,
+    level: 203.5,
+  },
+  {
+    device_timestamp: 1735451036000,
+    speed: 0,
+    ignition: false,
+    level: 208.25,
+  },
+  {
+    device_timestamp: 1735451056000,
+    speed: 0,
+    ignition: false,
+    level: 213,
+  },
+  {
+    device_timestamp: 1735451076000,
+    speed: 0,
+    ignition: false,
+    level: 217.75,
+  },
+  {
+    device_timestamp: 1735451096000,
+    speed: 0,
+    ignition: false,
+    level: 222.5,
+  },
+  {
+    device_timestamp: 1735451116000,
+    speed: 0,
+    ignition: false,
+    level: 227.25,
+  },
+  {
+    device_timestamp: 1735451136000,
+    speed: 0,
+    ignition: false,
+    level: 232,
+  },
+  {
+    device_timestamp: 1735451156000,
+    speed: 0,
+    ignition: false,
+    level: 236.75,
+  },
+  {
+    device_timestamp: 1735451176000,
+    speed: 0,
+    ignition: false,
+    level: 241.5,
+  },
+  {
+    device_timestamp: 1735451196000,
+    speed: 0,
+    ignition: false,
+    level: 246.25,
+  },
+  {
+    device_timestamp: 1735451216000,
+    speed: 0,
+    ignition: false,
+    level: 267.39,
+  },
+  {
+    device_timestamp: 1735451236000,
+    speed: 0,
+    ignition: false,
+    level: 350,
+  },
+  {
+    device_timestamp: 1735451386000,
+    speed: 0,
+    ignition: false,
+    level: 350,
+  },
+  {
+    device_timestamp: 1735451676000,
+    speed: 50,
+    ignition: false,
+    level: 350,
+  },
+  {
+    device_timestamp: 1735451976000,
+    speed: 50,
+    ignition: false,
+    level: 240,
+  },
+  {
+    device_timestamp: 1735624270000,
+    speed: 0,
+    ignition: false,
+    level: 310.87,
+    isLowNetwork: true,
+    status: "FUEL_THEFT",
+    address:
+      "Coimbatore - Nagapattinam Hwy, Annai Meena Nagar, Alangudi Bit, Punnainallur, Tamil Nadu 613501",
+    fuel_reading_count: "266.62 L",
+    status_display_text: "Theft",
+    end_time: 1735624270878,
+    start_time: 1735451976000,
+  },
+  {
+    device_timestamp: 1735624290000,
+    speed: 0,
+    ignition: false,
+    level: 271.74,
+  },
+  {
+    device_timestamp: 1735624310000,
+    speed: 0,
+    ignition: false,
+    level: 249,
+  },
+  {
+    device_timestamp: 1735624330000,
+    speed: 0,
+    ignition: false,
+    level: 246.75,
+  },
+  {
+    device_timestamp: 1735624350000,
+    speed: 0,
+    ignition: false,
+    level: 244.5,
+  },
+  {
+    device_timestamp: 1735624370000,
+    speed: 0,
+    ignition: false,
+    level: 242.25,
+  },
+  {
+    device_timestamp: 1735624390000,
+    speed: 0,
+    ignition: false,
+    level: 240,
+  },
+  {
+    device_timestamp: 1735624410000,
+    speed: 0,
+    ignition: false,
+    level: 237.75,
+  },
+  {
+    device_timestamp: 1735624430000,
+    speed: 0,
+    ignition: false,
+    level: 235.5,
+  },
+  {
+    device_timestamp: 1735624450000,
+    speed: 0,
+    ignition: false,
+    level: 233.25,
+  },
+  {
+    device_timestamp: 1735624470000,
+    speed: 0,
+    ignition: false,
+    level: 231,
+  },
+  {
+    device_timestamp: 1735624490000,
+    speed: 0,
+    ignition: false,
+    level: 228.75,
+  },
+  {
+    device_timestamp: 1735624510000,
+    speed: 0,
+    ignition: false,
+    level: 226.5,
+  },
+  {
+    device_timestamp: 1735624530000,
+    speed: 0,
+    ignition: false,
+    level: 224.25,
+  },
+  {
+    device_timestamp: 1735624550000,
+    speed: 0,
+    ignition: false,
+    level: 222,
+  },
+  {
+    device_timestamp: 1735624570000,
+    speed: 0,
+    ignition: false,
+    level: 219.75,
+  },
+  {
+    device_timestamp: 1735624590000,
+    speed: 0,
+    ignition: false,
+    level: 217.5,
+  },
+  {
+    device_timestamp: 1735624610000,
+    speed: 0,
+    ignition: false,
+    level: 215.25,
+  },
+  {
+    device_timestamp: 1735624630000,
+    speed: 0,
+    ignition: false,
+    level: 213,
+  },
+  {
+    device_timestamp: 1735624650000,
+    speed: 0,
+    ignition: false,
+    level: 210.75,
+  },
+  {
+    device_timestamp: 1735624670000,
+    speed: 0,
+    ignition: false,
+    level: 208.5,
+  },
+  {
+    device_timestamp: 1735624690000,
+    speed: 0,
+    ignition: false,
+    level: 206.25,
+  },
+  {
+    device_timestamp: 1735624710000,
+    speed: 0,
+    ignition: false,
+    level: 204,
+  },
+  {
+    device_timestamp: 1735624730000,
+    speed: 0,
+    ignition: false,
+    level: 201.75,
+  },
+  {
+    device_timestamp: 1735624750000,
+    speed: 0,
+    ignition: false,
+    level: 199.5,
+  },
+  {
+    device_timestamp: 1735624770000,
+    speed: 0,
+    ignition: false,
+    level: 197.25,
+  },
+  {
+    device_timestamp: 1735624790000,
+    speed: 0,
+    ignition: false,
+    level: 195,
+  },
+  {
+    device_timestamp: 1735624810000,
+    speed: 0,
+    ignition: false,
+    level: 192.75,
+  },
+  {
+    device_timestamp: 1735624830000,
+    speed: 0,
+    ignition: false,
+    level: 190.5,
+  },
+  {
+    device_timestamp: 1735624850000,
+    speed: 0,
+    ignition: false,
+    level: 188.25,
+  },
+  {
+    device_timestamp: 1735624870000,
+    speed: 0,
+    ignition: false,
+    level: 186,
+  },
+  {
+    device_timestamp: 1735624890000,
+    speed: 0,
+    ignition: false,
+    level: 183.75,
+  },
+  {
+    device_timestamp: 1735624910000,
+    speed: 0,
+    ignition: false,
+    level: 181.5,
+  },
+  {
+    device_timestamp: 1735624930000,
+    speed: 0,
+    ignition: false,
+    level: 179.25,
+  },
+  {
+    device_timestamp: 1735624950000,
+    speed: 0,
+    ignition: false,
+    level: 177,
+  },
+  {
+    device_timestamp: 1735624970000,
+    speed: 0,
+    ignition: false,
+    level: 174.75,
+  },
+  {
+    device_timestamp: 1735624990000,
+    speed: 0,
+    ignition: false,
+    level: 172.5,
+  },
+  {
+    device_timestamp: 1735625010000,
+    speed: 0,
+    ignition: false,
+    level: 170.25,
+  },
+  {
+    device_timestamp: 1735625030000,
+    speed: 0,
+    ignition: false,
+    level: 168,
+  },
+  {
+    device_timestamp: 1735625050000,
+    speed: 0,
+    ignition: false,
+    level: 165.75,
+  },
+  {
+    device_timestamp: 1735625070000,
+    speed: 0,
+    ignition: false,
+    level: 163.5,
+  },
+  {
+    device_timestamp: 1735625090000,
+    speed: 0,
+    ignition: false,
+    level: 161.25,
+  },
+  {
+    device_timestamp: 1735625110000,
+    speed: 0,
+    ignition: false,
+    level: 159,
+  },
+  {
+    device_timestamp: 1735625130000,
+    speed: 0,
+    ignition: false,
+    level: 156.75,
+  },
+  {
+    device_timestamp: 1735625150000,
+    speed: 0,
+    ignition: false,
+    level: 154.5,
+  },
+  {
+    device_timestamp: 1735625170000,
+    speed: 0,
+    ignition: false,
+    level: 152.25,
+  },
+  {
+    device_timestamp: 1735625190000,
+    speed: 0,
+    ignition: false,
+    level: 150,
+  },
+  {
+    device_timestamp: 1735625210000,
+    speed: 0,
+    ignition: false,
+    level: 147.75,
+  },
+  {
+    device_timestamp: 1735625230000,
+    speed: 0,
+    ignition: false,
+    level: 145.5,
+  },
+  {
+    device_timestamp: 1735625250000,
+    speed: 0,
+    ignition: false,
+    level: 143.25,
+  },
+  {
+    device_timestamp: 1735625270000,
+    speed: 0,
+    ignition: false,
+    level: 141,
+  },
+  {
+    device_timestamp: 1735625290000,
+    speed: 0,
+    ignition: false,
+    level: 138.75,
+  },
+  {
+    device_timestamp: 1735625310000,
+    speed: 0,
+    ignition: false,
+    level: 136.5,
+  },
+  {
+    device_timestamp: 1735625330000,
+    speed: 0,
+    ignition: false,
+    level: 134.25,
+  },
+  {
+    device_timestamp: 1735625350000,
+    speed: 0,
+    ignition: false,
+    level: 132,
+  },
+  {
+    device_timestamp: 1735625370000,
+    speed: 0,
+    ignition: false,
+    level: 129.75,
+  },
+  {
+    device_timestamp: 1735625390000,
+    speed: 0,
+    ignition: false,
+    level: 127.5,
+  },
+  {
+    device_timestamp: 1735625410000,
+    speed: 0,
+    ignition: false,
+    level: 125.25,
+  },
+  {
+    device_timestamp: 1735625430000,
+    speed: 0,
+    ignition: false,
+    level: 123,
+  },
+  {
+    device_timestamp: 1735625450000,
+    speed: 0,
+    ignition: false,
+    level: 120.75,
+  },
+  {
+    device_timestamp: 1735625470000,
+    speed: 0,
+    ignition: false,
+    level: 118.5,
+  },
+  {
+    device_timestamp: 1735625490000,
+    speed: 0,
+    ignition: false,
+    level: 116.25,
+  },
+  {
+    device_timestamp: 1735625510000,
+    speed: 0,
+    ignition: false,
+    level: 114,
+  },
+  {
+    device_timestamp: 1735625530000,
+    speed: 0,
+    ignition: false,
+    level: 111.75,
+  },
+  {
+    device_timestamp: 1735625550000,
+    speed: 0,
+    ignition: false,
+    level: 109.5,
+  },
+  {
+    device_timestamp: 1735625570000,
+    speed: 0,
+    ignition: false,
+    level: 107.25,
+  },
+  {
+    device_timestamp: 1735625590000,
+    speed: 0,
+    ignition: false,
+    level: 105,
+  },
+  {
+    device_timestamp: 1735625610000,
+    speed: 0,
+    ignition: false,
+    level: 102.75,
+  },
+  {
+    device_timestamp: 1735625630000,
+    speed: 0,
+    ignition: false,
+    level: 100.5,
+  },
+  {
+    device_timestamp: 1735625650000,
+    speed: 0,
+    ignition: false,
+    level: 98.25,
+  },
+  {
+    device_timestamp: 1735625670000,
+    speed: 0,
+    ignition: false,
+    level: 96,
+  },
+  {
+    device_timestamp: 1735625690000,
+    speed: 0,
+    ignition: false,
+    level: 93.75,
+  },
+  {
+    device_timestamp: 1735625710000,
+    speed: 0,
+    ignition: false,
+    level: 91.5,
+  },
+  {
+    device_timestamp: 1735625730000,
+    speed: 0,
+    ignition: false,
+    level: 89.25,
+  },
+  {
+    device_timestamp: 1735625750000,
+    speed: 0,
+    ignition: false,
+    level: 87,
+  },
+  {
+    device_timestamp: 1735625770000,
+    speed: 0,
+    ignition: false,
+    level: 84.75,
+  },
+  {
+    device_timestamp: 1735625790000,
+    speed: 0,
+    ignition: false,
+    level: 82.5,
+  },
+  {
+    device_timestamp: 1735625810000,
+    speed: 0,
+    ignition: false,
+    level: 80.25,
+  },
+  {
+    device_timestamp: 1735625830000,
+    speed: 0,
+    ignition: false,
+    level: 78,
+  },
+  {
+    device_timestamp: 1735625850000,
+    speed: 0,
+    ignition: false,
+    level: 75.75,
+  },
+  {
+    device_timestamp: 1735625870000,
+    speed: 0,
+    ignition: false,
+    level: 73.5,
+  },
+  {
+    device_timestamp: 1735625890000,
+    speed: 0,
+    ignition: false,
+    level: 71.25,
+  },
+  {
+    device_timestamp: 1735625910000,
+    speed: 0,
+    ignition: false,
+    level: 69,
+  },
+  {
+    device_timestamp: 1735625930000,
+    speed: 0,
+    ignition: false,
+    level: 66.75,
+  },
+  {
+    device_timestamp: 1735625950000,
+    speed: 0,
+    ignition: false,
+    level: 64.5,
+  },
+  {
+    device_timestamp: 1735625970000,
+    speed: 0,
+    ignition: false,
+    level: 62.25,
+  },
+  {
+    device_timestamp: 1735625990000,
+    speed: 0,
+    ignition: false,
+    level: 60,
+  },
+  {
+    device_timestamp: 1735626010000,
+    speed: 0,
+    ignition: false,
+    level: 57.75,
+  },
+  {
+    device_timestamp: 1735626030000,
+    speed: 0,
+    ignition: false,
+    level: 55.5,
+  },
+  {
+    device_timestamp: 1735626050000,
+    speed: 25,
+    ignition: false,
+    level: 53.25,
+  },
+  {
+    device_timestamp: 1735626070000,
+    speed: 28,
+    ignition: false,
+    level: 51,
+  },
+  {
+    device_timestamp: 1735626090000,
+    speed: 39,
+    ignition: false,
+    level: 48.75,
+  },
+  {
+    device_timestamp: 1735626110000,
+    speed: 46,
+    ignition: false,
+    level: 46.5,
+  },
+  {
+    device_timestamp: 1735626130000,
+    speed: 48,
+    ignition: false,
+    level: 44.25,
+  },
+  {
+    device_timestamp: 1735626280000,
+    speed: 52,
+    ignition: false,
+    level: 27.38,
+  },
+  {
+    device_timestamp: 1735626530000,
+    speed: 48,
+    ignition: false,
+    level: 0,
+  },
+  {
+    device_timestamp: 1735796071000,
+    speed: 51,
+    ignition: false,
+    level: 79.25,
+    isLowNetwork: true,
+    status: null,
+    address: null,
+    fuel_reading_count: null,
+    status_display_text: null,
+    end_time: 1735796071727,
+    start_time: 1735626530878,
+  },
+  {
+    device_timestamp: 1735796371000,
+    speed: 53,
+    ignition: false,
+    level: 79.25,
+  },
+  {
+    device_timestamp: 1735796671000,
+    speed: 44,
+    ignition: false,
+    level: 79.25,
+  },
+  {
+    device_timestamp: 1735796971000,
+    speed: 51,
+    ignition: false,
+    level: 79.25,
+  },
+  {
+    device_timestamp: 1735797271000,
+    speed: 46,
+    ignition: false,
+    level: 79.25,
+  },
+  {
+    device_timestamp: 1735797571000,
+    speed: 51,
+    ignition: false,
+    level: 79.25,
+  },
+  {
+    device_timestamp: 1735797871000,
+    speed: 56,
+    ignition: false,
+    level: 79.25,
+  },
+  {
+    device_timestamp: 1735798171000,
+    speed: 47,
+    ignition: false,
+    level: 79.25,
+  },
+  {
+    device_timestamp: 1735798331000,
+    speed: 50,
+    ignition: false,
+    level: 79.25,
+  },
+  {
+    device_timestamp: 1735862461000,
+    speed: 0,
+    ignition: false,
+    level: 241.5,
+    isLowNetwork: true,
+    status: null,
+    address: null,
+    fuel_reading_count: null,
+    status_display_text: null,
+    end_time: 1735862461000,
+    start_time: 1735798331727,
+  },
+  {
+    device_timestamp: 1735862681000,
+    speed: 0,
+    ignition: false,
+    level: 189.25,
+  },
+  {
+    device_timestamp: 1735862981000,
+    speed: 0,
+    ignition: false,
+    level: 118,
+  },
+  {
+    device_timestamp: 1735863281000,
+    speed: 0,
+    ignition: false,
+    level: 113.25,
+  },
+  {
+    device_timestamp: 1735863581000,
+    speed: 29,
+    ignition: false,
+    level: 81.75,
+  },
+  {
+    device_timestamp: 1735863881000,
+    speed: 33,
+    ignition: false,
+    level: 48,
+  },
+  {
+    device_timestamp: 1735864181000,
+    speed: 0,
+    ignition: false,
+    level: 112.25,
+  },
+  {
+    device_timestamp: 1735864481000,
+    speed: 0,
+    ignition: false,
+    level: 183.5,
+  },
+  {
+    device_timestamp: 1735864781000,
+    speed: 0,
+    ignition: false,
+    level: 188.25,
+  },
+  {
+    device_timestamp: 1735865081000,
+    speed: 52,
+    ignition: false,
+    level: 156.75,
+  },
+  {
+    device_timestamp: 1735865421000,
+    speed: 0,
+    ignition: false,
+    level: 102.25,
+    isLowNetwork: null,
+    status: "FUEL_THEFT",
+    address:
+      "Meeyazh Nursery Garden, 2-218, West Street, Ammaiyappan, Tamil Nadu 613701",
+    fuel_reading_count: "101.46 L",
+    status_display_text: "Theft",
+    end_time: null,
+    start_time: null,
+  },
+  {
+    device_timestamp: 1735865441000,
+    speed: 0,
+    ignition: false,
+    level: 100,
+  },
+  {
+    device_timestamp: 1735865461000,
+    speed: 0,
+    ignition: false,
+    level: 97.75,
+  },
+  {
+    device_timestamp: 1735865481000,
+    speed: 0,
+    ignition: false,
+    level: 95.5,
+  },
+  {
+    device_timestamp: 1735865501000,
+    speed: 0,
+    ignition: false,
+    level: 93.25,
+  },
+  {
+    device_timestamp: 1735865521000,
+    speed: 0,
+    ignition: false,
+    level: 91,
+  },
+  {
+    device_timestamp: 1735865541000,
+    speed: 0,
+    ignition: false,
+    level: 88.75,
+  },
+  {
+    device_timestamp: 1735865561000,
+    speed: 0,
+    ignition: false,
+    level: 86.5,
+  },
+  {
+    device_timestamp: 1735865581000,
+    speed: 0,
+    ignition: false,
+    level: 84.25,
+  },
+  {
+    device_timestamp: 1735865601000,
+    speed: 0,
+    ignition: false,
+    level: 82,
+  },
+  {
+    device_timestamp: 1735865621000,
+    speed: 0,
+    ignition: false,
+    level: 79.75,
+  },
+  {
+    device_timestamp: 1735865641000,
+    speed: 0,
+    ignition: false,
+    level: 77.5,
+  },
+  {
+    device_timestamp: 1735865661000,
+    speed: 0,
+    ignition: false,
+    level: 75.25,
+  },
+  {
+    device_timestamp: 1735865681000,
+    speed: 0,
+    ignition: false,
+    level: 73,
+  },
+  {
+    device_timestamp: 1735865701000,
+    speed: 0,
+    ignition: false,
+    level: 70.75,
+  },
+  {
+    device_timestamp: 1735865721000,
+    speed: 0,
+    ignition: false,
+    level: 68.5,
+  },
+  {
+    device_timestamp: 1735865741000,
+    speed: 0,
+    ignition: false,
+    level: 66.25,
+  },
+  {
+    device_timestamp: 1735865761000,
+    speed: 0,
+    ignition: false,
+    level: 64,
+  },
+  {
+    device_timestamp: 1735865781000,
+    speed: 0,
+    ignition: false,
+    level: 61.75,
+  },
+  {
+    device_timestamp: 1735865801000,
+    speed: 0,
+    ignition: false,
+    level: 59.5,
+  },
+  {
+    device_timestamp: 1735865821000,
+    speed: 0,
+    ignition: false,
+    level: 57.25,
+  },
+  {
+    device_timestamp: 1735865841000,
+    speed: 0,
+    ignition: false,
+    level: 55,
+  },
+  {
+    device_timestamp: 1735865861000,
+    speed: 0,
+    ignition: false,
+    level: 52.75,
+  },
+  {
+    device_timestamp: 1735865881000,
+    speed: 0,
+    ignition: false,
+    level: 50.5,
+  },
+  {
+    device_timestamp: 1735865901000,
+    speed: 0,
+    ignition: false,
+    level: 48.25,
+  },
+  {
+    device_timestamp: 1735865921000,
+    speed: 0,
+    ignition: false,
+    level: 46,
+  },
+  {
+    device_timestamp: 1735865941000,
+    speed: 0,
+    ignition: false,
+    level: 43.75,
+  },
+  {
+    device_timestamp: 1735865961000,
+    speed: 0,
+    ignition: false,
+    level: 41.5,
+  },
+  {
+    device_timestamp: 1735865981000,
+    speed: 0,
+    ignition: false,
+    level: 39.25,
+  },
+  {
+    device_timestamp: 1735866001000,
+    speed: 0,
+    ignition: false,
+    level: 37,
+  },
+  {
+    device_timestamp: 1735866021000,
+    speed: 0,
+    ignition: false,
+    level: 34.75,
+  },
+  {
+    device_timestamp: 1735866041000,
+    speed: 0,
+    ignition: false,
+    level: 32.5,
+  },
+  {
+    device_timestamp: 1735866061000,
+    speed: 0,
+    ignition: false,
+    level: 30.25,
+  },
+  {
+    device_timestamp: 1735866081000,
+    speed: 0,
+    ignition: false,
+    level: 28,
+  },
+  {
+    device_timestamp: 1735866101000,
+    speed: 0,
+    ignition: false,
+    level: 25.75,
+  },
+  {
+    device_timestamp: 1735866121000,
+    speed: 0,
+    ignition: false,
+    level: 23.5,
+  },
+  {
+    device_timestamp: 1735866141000,
+    speed: 0,
+    ignition: false,
+    level: 21.25,
+  },
+  {
+    device_timestamp: 1735866161000,
+    speed: 0,
+    ignition: false,
+    level: 19,
+  },
+  {
+    device_timestamp: 1735866181000,
+    speed: 0,
+    ignition: false,
+    level: 16.75,
+  },
+  {
+    device_timestamp: 1735866201000,
+    speed: 0,
+    ignition: false,
+    level: 14.5,
+  },
+  {
+    device_timestamp: 1735866221000,
+    speed: 0,
+    ignition: false,
+    level: 12.25,
+  },
+  {
+    device_timestamp: 1735866241000,
+    speed: 0,
+    ignition: false,
+    level: 10,
+  },
+  {
+    device_timestamp: 1735866261000,
+    speed: 0,
+    ignition: false,
+    level: 7.75,
+  },
+  {
+    device_timestamp: 1735866281000,
+    speed: 0,
+    ignition: false,
+    level: 5.5,
+  },
+  {
+    device_timestamp: 1735866301000,
+    speed: 0,
+    ignition: false,
+    level: 3.16,
+  },
+  {
+    device_timestamp: 1735866321000,
+    speed: 38,
+    ignition: false,
+    level: 0.79,
+  },
+  {
+    device_timestamp: 1735866471000,
+    speed: 34,
+    ignition: false,
+    level: 0,
+  },
+  {
+    device_timestamp: 1735866761000,
+    speed: 42,
+    ignition: false,
+    level: 0,
+  },
+  {
+    device_timestamp: 1735867061000,
+    speed: 0,
+    ignition: false,
+    level: 0,
+  },
+  {
+    device_timestamp: 1735867361000,
+    speed: 0,
+    ignition: false,
+    level: 0,
+  },
+  {
+    device_timestamp: 1735867661000,
+    speed: 0,
+    ignition: false,
+    level: 0,
+  },
+  {
+    device_timestamp: 1735867961000,
+    speed: 17,
+    ignition: false,
+    level: 0,
+  },
+  {
+    device_timestamp: 1735868261000,
+    speed: 44,
+    ignition: false,
+    level: 0,
+  },
+  {
+    device_timestamp: 1735929001000,
+    speed: 0,
+    ignition: false,
+    level: 102.25,
+    isLowNetwork: true,
+    status: null,
+    address: null,
+    fuel_reading_count: null,
+    status_display_text: null,
+    end_time: 1735929001000,
+    start_time: 1735868261000,
+  },
+  {
+    device_timestamp: 1735929161000,
+    speed: 0,
+    ignition: false,
+    level: 84.25,
+  },
+  {
+    device_timestamp: 1735929461000,
+    speed: 0,
+    ignition: false,
+    level: 50.5,
+  },
+  {
+    device_timestamp: 1735929761000,
+    speed: 0,
+    ignition: false,
+    level: 16.75,
+  },
+  {
+    device_timestamp: 1735930061000,
+    speed: 47,
+    ignition: false,
+    level: 0,
+  },
+  {
+    device_timestamp: 1735930361000,
+    speed: 45,
+    ignition: false,
+    level: 0,
+  },
+  {
+    device_timestamp: 1735930661000,
+    speed: 0,
+    ignition: false,
+    level: 0,
+  },
+  {
+    device_timestamp: 1735930961000,
+    speed: 0,
+    ignition: false,
+    level: 0,
+  },
+  {
+    device_timestamp: 1735931261000,
+    speed: 0,
+    ignition: false,
+    level: 0,
+  },
+  {
+    device_timestamp: 1735931561000,
+    speed: 47,
+    ignition: false,
+    level: 0,
+  },
+  {
+    device_timestamp: 1735931851000,
+    speed: 44,
+    ignition: false,
+    level: 0,
+  },
+  {
+    device_timestamp: 1735932901000,
+    speed: 0,
+    ignition: false,
+    level: 102.25,
+    isLowNetwork: true,
+    status: null,
+    address: null,
+    fuel_reading_count: null,
+    status_display_text: null,
+    end_time: 1735932901000,
+    start_time: 1735931851000,
+  },
+  {
+    device_timestamp: 1735933061000,
+    speed: 0,
+    ignition: false,
+    level: 84.25,
+  },
+  {
+    device_timestamp: 1735933361000,
+    speed: 0,
+    ignition: false,
+    level: 50.5,
+  },
+  {
+    device_timestamp: 1735933661000,
+    speed: 0,
+    ignition: false,
+    level: 16.75,
+  },
+  {
+    device_timestamp: 1735933961000,
+    speed: 45,
+    ignition: false,
+    level: 0,
+  },
+  {
+    device_timestamp: 1735934261000,
+    speed: 45,
+    ignition: false,
+    level: 0,
+  },
+  {
+    device_timestamp: 1735934561000,
+    speed: 0,
+    ignition: false,
+    level: 0,
+  },
+  {
+    device_timestamp: 1735934861000,
+    speed: 0,
+    ignition: false,
+    level: 0,
+  },
+  {
+    device_timestamp: 1735935161000,
+    speed: 0,
+    ignition: false,
+    level: 0,
+  },
+  {
+    device_timestamp: 1735935461000,
+    speed: 36,
+    ignition: false,
+    level: 0,
+  },
+  {
+    device_timestamp: 1735935751000,
+    speed: 18,
+    ignition: false,
+    level: 0,
+  },
+  {
+    device_timestamp: 1736248143000,
+    speed: 0,
+    ignition: false,
+    level: 92.75,
+    isLowNetwork: true,
+    status: null,
+    address: null,
+    fuel_reading_count: null,
+    status_display_text: null,
+    end_time: 1736248143448,
+    start_time: 1735935751000,
+  },
+  {
+    device_timestamp: 1736332357000,
+    speed: 14,
+    ignition: false,
+    level: 226,
+    isLowNetwork: true,
+    status: null,
+    address: null,
+    fuel_reading_count: null,
+    status_display_text: null,
+    end_time: 1736332357897,
+    start_time: 1736248143448,
   },
 ];
-
-// From DeepSeek
-export function processData(filteredData) {
-  let result = [];
-  let i = 0;
-
-  while (i < filteredData.length) {
-    let current = filteredData[i];
-    let next = filteredData[i + 1];
-
-    if (current.isLowNetwork) {
-      // Handle isLowNetwork true case
-      let firstPoint = [
-        current.device_timestamp,
-        current.level,
-        { ...current },
-      ];
-
-      let midTimestamp = (current.device_timestamp + next.device_timestamp) / 2;
-      let midLevel = (current.level + next.level) / 2;
-      let midPoint = [
-        midTimestamp,
-        midLevel,
-        {
-          device_timestamp: current.device_timestamp - 1,
-          status: "LOW_NETWORK",
-          end_time: next.device_timestamp,
-          start_time: current.device_timestamp,
-        },
-      ];
-
-      result.push({
-        type: "line",
-        lineStyle: {
-          type: "dashed",
-          color: "gray",
-        },
-        symbol: "none",
-        data: [firstPoint, midPoint],
-      });
-
-      result.push({
-        type: "line",
-        lineStyle: {
-          type: "dashed",
-          color: "gray",
-        },
-        symbol: "none",
-        data: [midPoint],
-      });
-
-      let lastPoint = [
-        next.device_timestamp,
-        next.level,
-        { ...next, device_timestamp: current.device_timestamp + 1 },
-      ];
-
-      result.push({
-        type: "line",
-        lineStyle: {
-          type: "dashed",
-          color: "gray",
-        },
-        symbol: "none",
-        data: [midPoint, lastPoint],
-      });
-
-      i += 2; // Skip the next element as it's part of the current group
-    } else {
-      // Handle other cases
-      let dataPoints = [];
-      let lineColor = current.ignition ? "blue" : "red";
-      let symbol = "none";
-      let symbolSize = 0;
-
-      if (current.status === "REFUELING" || current.status === "FUEL_THEFT") {
-        symbol =
-          current.status === "REFUELING"
-            ? `image://src/component/img/RefuelIcon.svg`
-            : `image://src/component/img/theftIcon.svg`;
-        symbolSize = 20;
-      }
-
-      // Add previous point if exists
-      if (i > 0) {
-        let prev = filteredData[i - 1];
-        dataPoints.push([
-          prev.device_timestamp + 1,
-          prev.level,
-          { ...prev, device_timestamp: prev.device_timestamp + 1 },
-        ]);
-      }
-
-      // Add current point
-      dataPoints.push([
-        current.device_timestamp,
-        current.level,
-        { ...current },
-      ]);
-
-      // Add next point if it's part of the same group
-      if (
-        next &&
-        !next.isLowNetwork &&
-        next.ignition === current.ignition &&
-        !next.status
-      ) {
-        dataPoints.push([next.device_timestamp, next.level, { ...next }]);
-        i++;
-      }
-
-      result.push({
-        type: "line",
-        lineStyle: {
-          type: "solid",
-          color: lineColor,
-        },
-        symbol: symbol,
-        symbolSize: symbolSize,
-        data: dataPoints,
-        areaStyle: current.isLowNetwork
-          ? undefined
-          : {
-              color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-                { offset: 0, color: "#ACD4FD" },
-                { offset: 1, color: "#F5FAFF" },
-              ]),
-            },
-      });
-
-      i++;
-    }
-  }
-
-  return result;
-}

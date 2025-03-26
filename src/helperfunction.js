@@ -310,6 +310,11 @@ export function transformDataForChart(filteredData) {
 
     // Handle special status points: isLowNetwork, REFUELING, FUEL_THEFT
     if (currentPoint.isLowNetwork === true) {
+      // If there's a current series, finalize it before processing low network
+      if (currentSeries && lastProcessedPoint) {
+        currentSeries = null; // Reset the current series
+      }
+
       // Handle low network points (create 3 series objects)
       handleLowNetworkPoint(
         currentPoint,
@@ -324,8 +329,12 @@ export function transformDataForChart(filteredData) {
       currentPoint.status === "REFUELING" ||
       currentPoint.status === "FUEL_THEFT"
     ) {
+      // Close the current series before handling the special status point
+      if (currentSeries && lastProcessedPoint) {
+        currentSeries = null; // Reset the current series
+      }
+
       // Handle refueling or fuel theft points
-      // console.log("result", { currentPoint, result, lastProcessedPoint });
       handleSpecialStatusPoint(currentPoint, result, lastProcessedPoint);
       lastProcessedPoint = currentPoint;
       continue;
@@ -532,7 +541,7 @@ export function handleSpecialStatusPoint(point, result, lastProcessedPoint) {
       point.level,
       {
         ...point,
-        device_timestamp: point.device_timestamp - 1,
+        device_timestamp: point.device_timestamp,
       },
     ]);
   }
@@ -598,4 +607,140 @@ export function handleSpecialStatusPoint(point, result, lastProcessedPoint) {
   }
 
   result.push(continuationSeries);
+}
+
+// From DeepSeek
+export function processData(filteredData) {
+  let result = [];
+  let i = 0;
+
+  while (i < filteredData.length) {
+    let current = filteredData[i];
+    let next = filteredData[i + 1];
+
+    if (current.isLowNetwork) {
+      // Handle isLowNetwork true case
+      let firstPoint = [
+        current.device_timestamp,
+        current.level,
+        { ...current },
+      ];
+
+      let midTimestamp = (current.device_timestamp + next.device_timestamp) / 2;
+      let midLevel = (current.level + next.level) / 2;
+      let midPoint = [
+        midTimestamp,
+        midLevel,
+        {
+          device_timestamp: current.device_timestamp - 1,
+          status: "LOW_NETWORK",
+          end_time: next.device_timestamp,
+          start_time: current.device_timestamp,
+        },
+      ];
+
+      result.push({
+        type: "line",
+        lineStyle: {
+          type: "dashed",
+          color: "gray",
+        },
+        symbol: "none",
+        data: [firstPoint, midPoint],
+      });
+
+      result.push({
+        type: "line",
+        lineStyle: {
+          type: "dashed",
+          color: "gray",
+        },
+        symbol: "none",
+        data: [midPoint],
+      });
+
+      let lastPoint = [
+        next.device_timestamp,
+        next.level,
+        { ...next, device_timestamp: current.device_timestamp + 1 },
+      ];
+
+      result.push({
+        type: "line",
+        lineStyle: {
+          type: "dashed",
+          color: "gray",
+        },
+        symbol: "none",
+        data: [midPoint, lastPoint],
+      });
+
+      i += 2; // Skip the next element as it's part of the current group
+    } else {
+      // Handle other cases
+      let dataPoints = [];
+      let lineColor = current.ignition ? "blue" : "red";
+      let symbol = "none";
+      let symbolSize = 0;
+
+      if (current.status === "REFUELING" || current.status === "FUEL_THEFT") {
+        symbol =
+          current.status === "REFUELING"
+            ? `image://src/component/img/RefuelIcon.svg`
+            : `image://src/component/img/theftIcon.svg`;
+        symbolSize = 20;
+      }
+
+      // Add previous point if exists
+      if (i > 0) {
+        let prev = filteredData[i - 1];
+        dataPoints.push([
+          prev.device_timestamp + 1,
+          prev.level,
+          { ...prev, device_timestamp: prev.device_timestamp + 1 },
+        ]);
+      }
+
+      // Add current point
+      dataPoints.push([
+        current.device_timestamp,
+        current.level,
+        { ...current },
+      ]);
+
+      // Add next point if it's part of the same group
+      if (
+        next &&
+        !next.isLowNetwork &&
+        next.ignition === current.ignition &&
+        !next.status
+      ) {
+        dataPoints.push([next.device_timestamp, next.level, { ...next }]);
+        i++;
+      }
+
+      result.push({
+        type: "line",
+        lineStyle: {
+          type: "solid",
+          color: lineColor,
+        },
+        symbol: symbol,
+        symbolSize: symbolSize,
+        data: dataPoints,
+        areaStyle: current.isLowNetwork
+          ? undefined
+          : {
+              color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                { offset: 0, color: "#ACD4FD" },
+                { offset: 1, color: "#F5FAFF" },
+              ]),
+            },
+      });
+
+      i++;
+    }
+  }
+
+  return result;
 }
